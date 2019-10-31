@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Society of Queens</title>
+	<link rel="stylesheet" href="indexCSS.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="indexJavaScript.js"></script>
+  </head>
+  <body>
+    <h1 class="pageTitle">Society of Queens</h1>
+    <div class="wrapper">
+		<div class="menu">
+      		<div class="linkBar" style="text-align:center">
+        		<a class ="leftLinkBarButton" id="currentPage" href="">Home</a>
+            	<a class="linkBarButton" href="">Map</a>
+            	<a class="linkBarButton" id="endOfLineOne" href="">Tickets</a>
+            	<a class="linkBarButton" id="startOfLineTwo" href="">Contact</a>
+            	<a class="linkBarButton" href="">Gallery</a>
+            	<a class="linkBarButton" id="rightLinkBarButton" href="">Line-Up</a>
+        	</div>
+		</div> <!--END OF MENU -->
+        <div class="content">
+	        
+	        <div id="header">
+		        <script>
+				// When the user scrolls down 50px from the top of the document, resize the header's font size
+				window.onscroll = function() {scrollFunction()};
+				
+				function scrollFunction() {
+				  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+				    document.getElementById("header").style.fontSize = "30px";
+				  } else {
+				    document.getElementById("header").style.fontSize = "50px";
+				  }
+				}
+				</script>
+				<h2>Welcome to the society!</h2>
+			</div>
+	        
+	        <div id="countDown"></div>
+				<script type="text/javascript">
+			    	$("#countDown")
+					.countdown("2020/08/20", function(event) {
+			        	$(this).text(
+			            	event.strftime('%D Days, %H hours, %M minutes, and %S seconds to go!')
+							);
+			    	});
+				</script>
+				<p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+				<p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+				<p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+				<p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+				<p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+				<p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+				<p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+				<p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+				<p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+				<p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+
+
+        	</div>
+        <div class="footer">
+	        <p>Here's a paragraph,<br><br>but this time with a few 'br' tags!</p>
+      </div>
+    </div>
+  </body>
+</html>
