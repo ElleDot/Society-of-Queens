@@ -5,12 +5,14 @@ p {
 	color: #eeffef;
 	font-family: "Comfortaa", Helvetica, sans-serif;
 	text-align: center;
+	font-size: 20px
 }
 
 .pageTitle, h2 {
 	font-family: "Mansalva", Helvetica, sans-serif;
 	color:#FE76B6;
 	text-align: center;
+	font-size: 40px;
 }
 
 .pageTitle {
@@ -20,6 +22,7 @@ p {
 body {
 	background-color: #0D010D;
 	margin: 0;
+	min-width: 750px;
 }
 
 .wrapper {
@@ -47,16 +50,13 @@ body {
 	grid-template-columns: repeat(6, 1fr);
 }
 
-.header {
-  padding: 10px 16px;
-  margin: 0px;
-  background: #555;
-  color: #f1f1f1;
+#headerGallerySeparator {
+	margin-top: 40px;
 }
 
-#header {
-	font-size: 50px;
-	transition: 0.2s;
+#aboutUsMessage {
+	padding-right: 100px;
+    padding-left: 100px;
 }
 	
 .content {
@@ -64,7 +64,6 @@ body {
 	grid-column: span 12;
 	background-color:#4C494A;
 	padding: 2%;
-	height: 1000px
 }
 
 .footer {
@@ -95,10 +94,17 @@ body {
 .leftLinkBarButton {
 	border-top-left-radius: 25px;
 	background-color:#0D010D;
+	color: #FDF508;
+	font-family: "Mansalva", Helvetica, sans-serif;
+	text-align: center;
+	font-size: 20px;
+	text-decoration: none;
 	opacity: 0.5;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
-#rightLinkBarButton {
+.rightLinkBarButton {
 	border-top-right-radius: 25px;
 	background-color:#0D010D;
 	opacity: 0.5;
@@ -116,26 +122,60 @@ body {
 	padding-bottom: 10px;
 }
 
-img {
-    max-width:100%;
-    margin-left: auto;
-	margin-right: auto;
-	display: block;
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
 }
 
-#countDown {
-	font-family: "Audiowide", Helvetica, sans-serif;
-	color:#EFEEFF;
-	text-align: center;
-	font-size: x-large; 
-	margin: 2%;
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-.secondWrapper {
+.container {
+  padding: 2px 16px;
+}
+
+.descriptionContainer {
+	grid-column: span 2;
+}
+
+.sideBySideContent {
 	display: grid;
-	grid-template-columns: repeat(12, 1fr);
-	grid-template-rows: repeat(3, 1fr);
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 2%;
 	padding: 2%;
+}
+
+.queenName {
+	text-align: left;
+	margin-bottom: 0px;
+}
+
+.queenRole {
+	text-align: left;
+	margin-top: 10px;
+}
+
+.queenBlurb {
+	text-align: left;
+	margin-right: 10%	
+}
+
+.queenTitle {
+	text-align: center;
+	font-family: "Mansalva", Helvetica, sans-serif;
+	color:#FE76B6;
+	font-size: 25px;
+	margin-top: 10px;
+	
+}
+
+.queenDescription {
+	
+	
 }
 
 @media screen and (max-width: 750px) {
@@ -150,7 +190,7 @@ img {
 		border-top-right-radius: 25px;
 	}
 	
-	#rightLinkBarButton {
+	.rightLinkBarButton {
 		border-top-right-radius: 0px;
 	}
     

@@ -7,7 +7,7 @@ p {
 	text-align: center;
 }
 
-.pageTitle , h2 {
+.pageTitle, h2 {
 	font-family: "Mansalva", Helvetica, sans-serif;
 	color:#FE76B6;
 	text-align: center;
@@ -42,13 +42,6 @@ body {
 	margin-bottom: auto;
 	display: grid;
 	grid-template-columns: repeat(6, 1fr);
-}
-
-.header {
-  padding: 10px 16px;
-  margin: 0px;
-  background: #555;
-  color: #f1f1f1;
 }
 
 #headerGallerySeparator {
@@ -140,14 +133,6 @@ img {
 	padding: 2%;
 }
 
-.socialPageMessage {
-	font-family: "Audiowide", Helvetica, sans-serif;
-	color:#EFEEFF;
-	text-align: center;
-	grid-column: 4 / span 6;
-	grid-row: 2;
-}
-
 div.gallery:hover {
     border: 1px solid #777;
 }
@@ -194,6 +179,22 @@ div.gallery {
   background-color: rgba(0,0,0,0.5); /* Black background with opacity */
   z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
   cursor: pointer; /* Add a pointer on hover */
+  transition: 1s;
+  -moz-transition: 1s;
+  -webkit-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+  opacity: 0;
+}
+
+#text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
 }
 
 
