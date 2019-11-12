@@ -8,6 +8,18 @@ p {
 	font-size: 20px
 }
 
+.roundedContainer {
+	background-color:#8f9b9c;
+	border-radius: 25px;
+	margin-bottom: 25px;
+}
+
+#lastRoundedContainer {
+	background-color:#8f9b9c;
+	border-radius: 25px;
+	margin-bottom: auto;
+}
+
 .pageTitle, h2 {
 	font-family: "Mansalva", Helvetica, sans-serif;
 	color:#FE76B6;
@@ -52,6 +64,7 @@ body {
 
 #headerGallerySeparator {
 	margin-top: 40px;
+	margin-bottom: 40px;
 }
 
 #aboutUsMessage {
@@ -102,6 +115,7 @@ body {
 	opacity: 0.5;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	transition: 0.5s;
 }
 
 .rightLinkBarButton {
@@ -131,7 +145,7 @@ body {
 }
 
 .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 16px 32px 0 rgba(0,0,0,0.5);
 }
 
 .container {
@@ -152,11 +166,13 @@ body {
 .queenName {
 	text-align: left;
 	margin-bottom: 0px;
+	color: #FDF508;
 }
 
 .queenRole {
 	text-align: left;
 	margin-top: 10px;
+	color:#FE76B6;
 }
 
 .queenBlurb {
@@ -167,15 +183,46 @@ body {
 .queenTitle {
 	text-align: center;
 	font-family: "Mansalva", Helvetica, sans-serif;
-	color:#FE76B6;
+	color: #FDF508;
 	font-size: 25px;
 	margin-top: 10px;
+	margin-bottom: 0px;
 	
 }
 
-.queenDescription {
+.cardDescription {
+	margin-top: 10px;
+	margin-bottom: 10px;
 	
-	
+}
+
+.instagramHandle {
+	color: #eeffef;
+	font-family: "Comfortaa", Helvetica, sans-serif;
+	text-align: center;
+	width: 100%;
+	font-size: 15px;
+	opacity: 0.75;
+	margin-bottom: 10px;
+}
+
+.instagramHandle:hover {
+	transition: 0.5s;
+}
+
+.queenNameRight {
+	text-align: right;
+	color: #FDF508;
+}
+
+.queenRoleRight {
+	text-align: right;
+	color:#FE76B6;
+}
+
+.queenBlurbRight {
+	text-align: right;
+	margin-left: 10%
 }
 
 @media screen and (max-width: 750px) {
