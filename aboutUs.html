@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Society of Queens</title>
+    <title>Society of Queens: Meet the Team</title>
 	<link rel="stylesheet" href="aboutUsCSS.css">
+	<script src="aboutUsJavaScript.js"></script>
   </head>
   <body>
     <h1 class="pageTitle">Society of Queens</h1>
@@ -18,13 +19,13 @@
         	</div>
 		</div> <!--END OF NAVBAR -->
         <div class="content">
-	        <h2>About Us</h2>
+	        <h2>About Us - Meet the Team!</h2>
 		    <p id="aboutUsMessage">This page is our way of saying hi!<br><br>You can find our social media tags and handles, along with any other info (like our email addresses) you may want to find out. If you need anything, don't be afraid to reach out to one of our Queens!</p>
 	        <hr id="headerGallerySeparator">
 	        
 	        <div class="roundedContainer">
 		        <div class="sideBySideContent">
-			        <div class="card">
+			        <div class="leftCard" onclick="memberOneSocial()">
 						<img src="img_avatar.png" alt="Avatar" style="width:100%">
 						<div class="container">
 							<h4 class="queenTitle"><b>Jane Doe</b></h4> 
@@ -38,6 +39,7 @@
 					<div class="descriptionContainer">
 						<h2 class="queenName">Name of Member</h2>
 						<h3 class="queenRole">Role of Member</h3>
+						<hr>
 						<p class="queenBlurb">Description of member here. Sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text</p>
 					</div>
 		        </div> <!-- CLOSING OF sideBySideContent -->   
@@ -45,12 +47,13 @@
 	        
 	        <div class="roundedContainer">
 		        <div class="sideBySideContent">
-			        <div class="descriptionContainer">
+			        <div class="descriptionContainer" id="leftDescriptionContainer">
 						<h2 class="queenNameRight">Name of Member</h2>
 						<h3 class="queenRoleRight">Role of Member</h3>
+						<hr>
 						<p class="queenBlurbRight">Description of member here. Sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text</p>
 					</div>
-			        <div class="card">
+			        <div class="rightCard">
 						<img src="img_avatar.png" alt="Avatar" style="width:100%">
 						<div class="container">
 							<h4 class="queenTitle"><b>Jane Doe</b></h4> 
@@ -66,7 +69,7 @@
 	        
 	        <div class="roundedContainer" id="lastRoundedContainer">
 		        <div class="sideBySideContent">
-			        <div class="card">
+			        <div class="leftCard">
 						<img src="img_avatar.png" alt="Avatar" style="width:100%">
 						<div class="container">
 							<h4 class="queenTitle"><b>Jane Doe</b></h4> 
@@ -80,6 +83,7 @@
 					<div class="descriptionContainer">
 						<h2 class="queenName">Name of Member</h2>
 						<h3 class="queenRole">Role of Member</h3>
+						<hr>
 						<p class="queenBlurb">Description of member here. Sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text</p>
 					</div>
 		        </div> <!-- CLOSING OF sideBySideContent -->   
