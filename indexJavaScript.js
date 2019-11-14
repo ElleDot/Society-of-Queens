@@ -1,13 +1,29 @@
 // When the user scrolls down 50px from the top of the document, resize the header's font size
-	window.onscroll = function() {scrollFunction()};
+window.onscroll = function() {scrollFunction()};
 				
-	function scrollFunction() {
-	    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-	    	document.getElementById("header").style.fontSize = "30px";
-	    } else {
-	    	document.getElementById("header").style.fontSize = "50px";
-	    }
-	}
+function scrollFunction() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    	document.getElementById("header").style.fontSize = "30px";
+    } else {
+    	document.getElementById("header").style.fontSize = "50px";
+    }
+}
+	
+function openInstagram() {
+	window.open("https://www.instagram.com/thesocietyofqueens/", "_blank");
+}
+
+function openTwitter() {
+	window.open("https://twitter.com/soqinc", "_blank");
+}
+
+function openFacebook() {
+	window.open("https://www.facebook.com/thesocietyofqueens/", "_blank");
+}
+
+function openPaypal() {
+	window.open("https://www.google.co.uk", "_blank");
+}
 
 
 

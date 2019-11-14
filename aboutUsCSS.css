@@ -33,7 +33,6 @@ p {
 body {
 	background-color: #0D010D;
 	margin: 0;
-	min-width: 750px;
 }
 
 .wrapper {
@@ -191,14 +190,20 @@ img {
 
 .queenName {
 	text-align: left;
-	margin-bottom: 0px;
+	margin: 20px 0px 0px 0px;
 	color: #FDF508;
+	font-size: 40px;
+	font-family: "Avenir Next", Helvetica, sans-serif;
+	font-weight: 700;
 }
 
 .queenRole {
 	text-align: left;
-	margin-top: 10px;
+	margin: 0px;
 	color:#FE76B6;
+	font-size: 30px;
+	font-family: "Avenir Next", Helvetica, sans-serif;
+	font-weight: 300;
 }
 
 .queenBlurb {
@@ -219,7 +224,7 @@ img {
 .cardDescription {
 	margin-top: 10px;
 	margin-bottom: 10px;
-	
+	font-size: 20px;
 }
 
 .instagramHandle {
@@ -235,19 +240,104 @@ img {
 .queenNameRight {
 	text-align: right;
 	color: #FDF508;
-	margin-bottom: 0px;
+	margin: 20px 0px 0px 0px;
+	font-size: 40px;
+	font-family: "Avenir Next", Helvetica, sans-serif;
+	font-weight: 700;
 }
 
 .queenRoleRight {
 	text-align: right;
 	color:#FE76B6;
-	margin-top: 10px;
+	margin: 0;
+	font-size: 30px;
+	font-family: "Avenir Next", Helvetica, sans-serif;
+	font-weight: 300;
 }
 
 .queenBlurbRight {
 	text-align: right;
 	margin-left: 10%
 }
+
+/* BEGINNING OF FLOATING RIGHT HAND MENU FOR SOCIALS :) */
+
+#socialMenu {
+	position: fixed;
+	right: 0;
+	top: 25%;
+	width: 8em;
+	margin-top: -2.5em;
+}
+
+#mySidenav div {
+	grid-template-columns: repeat(5, 1fr);
+	display: grid;
+	position: absolute;
+	right: -110px;
+	transition: 0.5s;
+	padding: 10px 0px 10px 10px;
+	width: 150px;
+	text-decoration: none;
+	font-size: 20px;
+	color: white;
+	border-radius: 10px 0 0 10px;
+	box-shadow: 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+#mySidenav div:hover {
+  right: 0; /* move items to the left, showing them on rollover*/
+  cursor: pointer; /* clicky clicky */
+}
+
+.instagramSocial {
+	background-image: linear-gradient(45deg, #515BD4, #8134AF, #DD2A7B, #FEDA77, #F58529);
+	-webkit-background-clip: text;
+	color: transparent;
+	grid-column: span 4;
+	margin: 3px 0px 0px 0px;
+}
+
+.otherSocial {
+	text-align: left;
+	grid-column: span 4;
+	height: 32px;
+	margin: 3px 0px 0px 8px;
+	vertical-align: middle;
+}	
+
+#instagramSocials {
+	top: 20px;
+	background-color: #EEEEEE;
+	height: 32px;
+}
+
+#twitterSocial {
+  top: 82px;
+  background-color: #6699FF; /* Twitter Blue */
+  height: 32px;
+  font-family: "Avenir Next", sans-serif
+}
+
+#facebookSocial {
+  top: 144px;
+  background-color: #3B5998; /* Facebook Blue */
+  height: 32px;
+  font-family: "Avenir Next", sans-serif
+}
+
+#paypalSocial {
+  top: 206px;
+  background-color: #3B7BBF; /* Paypal Blue */
+  height: 32px;
+  font-family: "Avenir Next", sans-serif
+}
+
+.socialImage {
+	border-radius: 0px;
+}
+
+/* END OF SOCIAL MENU */
 
 @media screen and (max-width: 750px) {
 	

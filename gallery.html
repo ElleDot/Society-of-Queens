@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 	<head>
     	<title>Society of Queens: Gallery</title>
@@ -6,6 +6,28 @@
 		<script src="galleryJavaScript.js"></script>
 	</head>
     <body>
+	    
+	    <div id="socialMenu">
+			<div id="mySidenav" class="sidenav">
+				<div id="instagramSocials" onclick="openInstagram()">
+					<img src="instagram32.png" class="socialImage">
+					<p class="instagramSocial">Instagram</p>
+				</div>
+				<div id="twitterSocial" onclick="openTwitter()">
+					<img src="twitter32.png" class="socialImage">
+					<p class="otherSocial">Twitter</p>
+				</div>
+				<div id="facebookSocial" onclick="openFacebook()">
+					<img src="facebook32.png" class="socialImage">
+					<p class="otherSocial">Facebook</p>
+				</div>
+				<div id="paypalSocial" onclick="openPaypal()">
+					<img src="paypal32.png" class="socialImage">
+					<p class="otherSocial">Paypal</p>
+				</div>
+			</div>
+		</div>
+	    
 	    <!--PUT PAGE LOGO AND INFO UP HERE-->
 	    <h1 class="pageTitle">Society of Queens</h1>
 	    <div class="wrapper">
@@ -14,15 +36,15 @@
 	        		<a class ="leftLinkBarButton" href="index.html">Home</a>
 	            	<a class="linkBarButton" href="">Page 2</a>
 	            	<a class="linkBarButton" id="endOfLineOne" href="">Page 3</a>
-	            	<a class="linkBarButton" id="startOfLineTwo" href="">Page 4</a>
+	            	<a class="linkBarButton" id="startOfLineTwo" href="">Paypal</a>
 	            	<a class="linkBarButton" id="currentPage" href="">Gallery</a>
 	            	<a class="linkBarButton" id="rightLinkBarButton" href="aboutUs.html">About Us</a>
 	        	</div>
 			</div> <!--END OF MENU -->
 	        <div class="content">
 		        <h2>SoQ Highlights</h2>
-		        <p>Here at the Society of Queens, we have hosted, been at and been at the core of many different events. Take a look at our gallery below to see where we've been!</p>
-		        
+		        <p>Here at the Society of Queens, we have hosted, attended and been at the core of many different events. Take a look at our gallery below to see where we've been!</p>
+		        		        
 		        <!-- The Modal -->
 				<div id="myModal" class="modal">
 				  <span class="close">×</span>
@@ -31,51 +53,49 @@
 				</div>
 		        
 		        <hr id="headerGallerySeparator">
-		        <div class="galBarContent">
-			        <div class="sideBySideContent">
-					    <div class="gallery" onclick="on1()">
-							<img class="galleryImage" id="imageOne" src="tree1.jpg" alt="Sample text for picture one.">
-							<hr class="galleryImageSeparator">
-							<div class="desc"><p>Test image 1</p></div>
-						</div>
-						<div class="gallery" onclick="on2()">
-							<img class="galleryImage" id="imageTwo" src="tree7.jpg" alt="Sample text for picture one.">
-							<hr class="galleryImageSeparator">
-							<div class="desc"><p>Test image 2</p></div>
-						</div>
-						<div class="gallery" onclick="on3()">
-							<img class="galleryImage" id="imageThree" src="tree3.jpg" alt="Sample text for picture one.">
-							<hr class="galleryImageSeparator">
-							<div class="desc"><p>Test image 3</p></div>
-						</div>
-						<div class="gallery" onclick="on4()">
-							<img class="galleryImage" id="imageFour" src="tree4.jpg" alt="Sample text for picture one.">
-							<hr class="galleryImageSeparator">
-							<div class="desc"><p>Test image 4</p></div>
-						</div>
-						<div class="gallery" onclick="on5()">
-							<img class="galleryImage" id="imageFive" src="tree5.jpg" alt="Sample text for picture one.">
-							<hr class="galleryImageSeparator">
-							<div class="desc"><p>Test image 5</p></div>
-						</div>
-						<div class="gallery" onclick="on6()">
-							<img class="galleryImage" id="imageSix" src="tree6.jpg" alt="Sample text for picture one.">
-							<hr class="galleryImageSeparator">
-							<div class="desc"><p>Test image 6</p></div>
-						</div>
-						<div class="gallery" onclick="on7()">
-							<img class="galleryImage" id="imageSeven" src="tree2.jpg" alt="Sample text for picture one.">
-							<hr class="galleryImageSeparator">
-							<div class="desc"><p>Test image 7</p></div>
-						</div>
-						<div class="gallery" onclick="on8()">
-							<img class="galleryImage" id="imageEight" src="tree8.jpg" alt="Sample text for picture one.">
-							<hr class="galleryImageSeparator">
-							<div class="desc"><p>Test image 8</p></div>
-						</div>
-			        </div>
-			        <div class="rightBarContent"><p>heyo :)</p></div>
-		        </div>
+		        
+			    <div class="sideBySideContent">
+				    <div class="gallery" onclick="on1()">
+						<img class="galleryImage" id="imageOne" src="tree1.jpg" alt="Sample text for picture one.">
+						<hr class="galleryImageSeparator">
+						<div class="desc"><p>Test image 1</p></div>
+					</div>
+					<div class="gallery" onclick="on2()">
+						<img class="galleryImage" id="imageTwo" src="tree7.jpg" alt="Sample text for picture one.">
+						<hr class="galleryImageSeparator">
+						<div class="desc"><p>Test image 2</p></div>
+					</div>
+					<div class="gallery" onclick="on3()">
+						<img class="galleryImage" id="imageThree" src="tree3.jpg" alt="Sample text for picture one.">
+						<hr class="galleryImageSeparator">
+						<div class="desc"><p>Test image 3</p></div>
+					</div>
+					<div class="gallery" onclick="on4()">
+						<img class="galleryImage" id="imageFour" src="tree4.jpg" alt="Sample text for picture one.">
+						<hr class="galleryImageSeparator">
+						<div class="desc"><p>Test image 4</p></div>
+					</div>
+					<div class="gallery" onclick="on5()">
+						<img class="galleryImage" id="imageFive" src="tree5.jpg" alt="Sample text for picture one.">
+						<hr class="galleryImageSeparator">
+						<div class="desc"><p>Test image 5</p></div>
+					</div>
+					<div class="gallery" onclick="on6()">
+						<img class="galleryImage" id="imageSix" src="tree6.jpg" alt="Sample text for picture one.">
+						<hr class="galleryImageSeparator">
+						<div class="desc"><p>Test image 6</p></div>
+					</div>
+					<div class="gallery" onclick="on7()">
+						<img class="galleryImage" id="imageSeven" src="tree2.jpg" alt="Sample text for picture one.">
+						<hr class="galleryImageSeparator">
+						<div class="desc"><p>Test image 7</p></div>
+					</div>
+					<div class="gallery" onclick="on8()">
+						<img class="galleryImage" id="imageEight" src="tree8.jpg" alt="Sample text for picture one.">
+						<hr class="galleryImageSeparator">
+						<div class="desc"><p>Test image 8</p></div>
+					</div>
+			    </div>
 		    </div>
 		    <div class="footer">
 	        	<p>Here's a paragraph,<br><br>but this time with a few 'br' tags!</p>

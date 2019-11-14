@@ -6,39 +6,62 @@
 	<script src="aboutUsJavaScript.js"></script>
   </head>
   <body>
+	  
+	    <div id="socialMenu">
+			<div id="mySidenav" class="sidenav">
+				<div id="instagramSocials" onclick="openInstagram()">
+					<img src="instagram32.png" class="socialImage">
+					<p class="instagramSocial">Instagram</p>
+				</div>
+				<div id="twitterSocial" onclick="openTwitter()">
+					<img src="twitter32.png" class="socialImage">
+					<p class="otherSocial">Twitter</p>
+				</div>
+				<div id="facebookSocial" onclick="openFacebook()">
+					<img src="facebook32.png" class="socialImage">
+					<p class="otherSocial">Facebook</p>
+				</div>
+				<div id="paypalSocial" onclick="openPaypal()">
+					<img src="paypal32.png" class="socialImage">
+					<p class="otherSocial">Paypal</p>
+				</div>
+			</div>
+		</div>
+	  
     <h1 class="pageTitle">Society of Queens</h1>
+    
     <div class="wrapper">
 		<div class="menu">
       		<div class="linkBar" style="text-align:center">
         		<a class ="leftLinkBarButton" href="index.html">Home</a>
             	<a class="linkBarButton" href="">Page 2</a>
             	<a class="linkBarButton" id="endOfLineOne" href="">Page 3</a>
-            	<a class="linkBarButton" id="startOfLineTwo" href="">Page 4</a>
+            	<a class="linkBarButton" href="paypal.html" id="startOfLineTwo" href="">Paypal</a>
             	<a class="linkBarButton" href="gallery.html">Gallery</a>
             	<a class="rightLinkBarButton" id="currentPage" href="">About Us</a>
         	</div>
 		</div> <!--END OF NAVBAR -->
         <div class="content">
-	        <h2>About Us - Meet the Team!</h2>
+	        <h2>About Us - Meet your Queens!</h2>
 		    <p id="aboutUsMessage">This page is our way of saying hi!<br><br>You can find our social media tags and handles, along with any other info (like our email addresses) you may want to find out. If you need anything, don't be afraid to reach out to one of our Queens!</p>
 	        <hr id="headerGallerySeparator">
 	        
 	        <div class="roundedContainer">
 		        <div class="sideBySideContent">
 			        <div class="leftCard" onclick="memberOneSocial()">
-						<img src="img_avatar.png" alt="Avatar" style="width:100%">
+						<img src="https://scontent-lht6-1.cdninstagram.com/vp/8229c03fa3fe3bd5e8c17081918fd01c/5E587F66/t51.2885-19/s150x150/52566042_1839198856191864_4800175717683822592_n.jpg?_nc_ht=scontent-lht6-1.cdninstagram.com" alt="Avatar" style="width:100%">
 						<div class="container">
-							<h4 class="queenTitle"><b>Jane Doe</b></h4> 
+							<h4 class="queenTitle"><b>Anisha Kular</b></h4> 
 							<hr>
-							<p class="cardDescription">Lead Project Organiser</p>
+							<p class="cardDescription">Society Organiser</p>
 							<div class="instagramHandle">
-								<a class="instagramHandle">@SoQ_Member1</a> 
+								<a class="instagramHandle">@a.kular</a> 
 							</div> 
 						</div>
 					</div>
 					<div class="descriptionContainer">
-						<h2 class="queenName">Name of Member</h2>
-						<h3 class="queenRole">Role of Member</h3>
+						<h2 class="queenName">Anisha Kular</h2>
+						<h3 class="queenRole">Society Organiser</h3>
 						<hr>
 						<p class="queenBlurb">Description of member here. Sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text</p>
 					</div>
@@ -48,43 +71,109 @@
 	        <div class="roundedContainer">
 		        <div class="sideBySideContent">
 			        <div class="descriptionContainer" id="leftDescriptionContainer">
-						<h2 class="queenNameRight">Name of Member</h2>
-						<h3 class="queenRoleRight">Role of Member</h3>
+						<h2 class="queenNameRight">Eleanor Grace</h2>
+						<h3 class="queenRoleRight">Talent Scout</h3>
 						<hr>
 						<p class="queenBlurbRight">Description of member here. Sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text</p>
 					</div>
-			        <div class="rightCard">
+			        <div class="rightCard" onclick="memberTwoSocial()">
 						<img src="img_avatar.png" alt="Avatar" style="width:100%">
 						<div class="container">
-							<h4 class="queenTitle"><b>Jane Doe</b></h4> 
+							<h4 class="queenTitle"><b>Eleanor Grace</b></h4> 
 							<hr>
-							<p class="cardDescription">Lead Project Organiser</p>
+							<p class="cardDescription">Talent Scout</p>
 							<div class="instagramHandle">
-								<a class="instagramHandle">@SoQ_Member1</a> 
+								<a class="instagramHandle">@eleanorGrace___</a> 
 							</div> 
 						</div>
 					</div>
 		        </div> <!-- CLOSING OF sideBySideContent -->   
 	        </div>
 	        
-	        <div class="roundedContainer" id="lastRoundedContainer">
+	        <div class="roundedContainer">
 		        <div class="sideBySideContent">
-			        <div class="leftCard">
-						<img src="img_avatar.png" alt="Avatar" style="width:100%">
+			        <div class="leftCard" onclick="memberThreeSocial()">
+						<img src="https://scontent-lht6-1.cdninstagram.com/vp/97039ea40e849d3277ffade72c4de52e/5E597CED/t51.2885-19/s150x150/67710366_2622730374433320_534104656708632576_n.jpg?_nc_ht=scontent-lht6-1.cdninstagram.com" alt="Avatar" style="width:100%">
 						<div class="container">
-							<h4 class="queenTitle"><b>Jane Doe</b></h4> 
+							<h4 class="queenTitle"><b>Reema Khan</b></h4> 
 							<hr>
-							<p class="cardDescription">Lead Project Organiser</p>
+							<p class="cardDescription">Social Media Executive</p>
 							<div class="instagramHandle">
-								<a class="instagramHandle">@SoQ_Member1</a> 
+								<a class="instagramHandle">@reemakh4n1</a> 
 							</div> 
 						</div>
 					</div>
 					<div class="descriptionContainer">
-						<h2 class="queenName">Name of Member</h2>
-						<h3 class="queenRole">Role of Member</h3>
+						<h2 class="queenName">Reema Khan</h2>
+						<h3 class="queenRole">Social Media Executive</h3>
 						<hr>
 						<p class="queenBlurb">Description of member here. Sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text</p>
+					</div>
+		        </div> <!-- CLOSING OF sideBySideContent -->   
+	        </div>
+	        
+	        <div class="roundedContainer">
+		        <div class="sideBySideContent">
+			        <div class="descriptionContainer" id="leftDescriptionContainer">
+						<h2 class="queenNameRight">Ellie Bryan</h2>
+						<h3 class="queenRoleRight">Treasurer</h3>
+						<hr>
+						<p class="queenBlurbRight">Description of member here. Sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text</p>
+					</div>
+			        <div class="rightCard" onclick="memberFourSocial()">
+						<img src="https://scontent-lht6-1.cdninstagram.com/vp/dda32f3ad14f7fdbcad8fde983647acb/5E482CD3/t51.2885-19/s150x150/71097658_839910086411362_2531459290540015616_n.jpg?_nc_ht=scontent-lht6-1.cdninstagram.com" alt="Avatar" style="width:100%">
+						<div class="container">
+							<h4 class="queenTitle"><b>Ellie Bryan</b></h4> 
+							<hr>
+							<p class="cardDescription">Treasurer</p>
+							<div class="instagramHandle">
+								<a class="instagramHandle">@_ellllb</a> 
+							</div> 
+						</div>
+					</div>
+		        </div> <!-- CLOSING OF sideBySideContent -->   
+	        </div>
+	        
+	        <div class="roundedContainer">
+		        <div class="sideBySideContent">
+			        <div class="leftCard" onclick="memberFiveSocial()">
+						<img src="https://scontent-lht6-1.cdninstagram.com/vp/3e7982171fb2c0c47e951cb596a49a67/5E6B1ED4/t51.2885-19/s150x150/74642751_918113721908383_7023153032342798336_n.jpg?_nc_ht=scontent-lht6-1.cdninstagram.com" alt="Avatar" style="width:100%">
+						<div class="container">
+							<h4 class="queenTitle"><b>Angel Orola</b></h4> 
+							<hr>
+							<p class="cardDescription">Co-Founder</p>
+							<div class="instagramHandle">
+								<a class="instagramHandle">@angelorola</a> 
+							</div> 
+						</div>
+					</div>
+					<div class="descriptionContainer">
+						<h2 class="queenName">Angel Orola</h2>
+						<h3 class="queenRole">Co-Founder</h3>
+						<hr>
+						<p class="queenBlurb">Description of member here. Sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text</p>
+					</div>
+		        </div> <!-- CLOSING OF sideBySideContent -->   
+	        </div>
+	        
+	        <div class="roundedContainer">
+		        <div class="sideBySideContent">
+			        <div class="descriptionContainer" id="leftDescriptionContainer">
+						<h2 class="queenNameRight">Sarah Orola</h2>
+						<h3 class="queenRoleRight">Founder</h3>
+						<hr>
+						<p class="queenBlurbRight">Description of member here. Sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text</p>
+					</div>
+			        <div class="rightCard" onclick="memberSixSocial()">
+						<img src="img_avatar.png" alt="Avatar" style="width:100%">
+						<div class="container">
+							<h4 class="queenTitle"><b>Sarah Orola</b></h4> 
+							<hr>
+							<p class="cardDescription">Founder</p>
+							<div class="instagramHandle">
+								<a class="instagramHandle">@itssarahlouuise</a> 
+							</div> 
+						</div>
 					</div>
 		        </div> <!-- CLOSING OF sideBySideContent -->   
 	        </div>

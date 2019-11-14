@@ -1,12 +1,34 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Society of Queens: Home</title>
-	<link rel="stylesheet" href="indexCSS.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="indexJavaScript.js"></script>
-  </head>
-  <body>
+	<head>
+    	<title>Society of Queens: Home</title>
+		<link rel="stylesheet" href="indexCSS.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="indexJavaScript.js"></script>
+	</head>
+	<body>
+	  
+	    <div id="socialMenu">
+			<div id="mySidenav" class="sidenav">
+				<div id="instagramSocials" onclick="openInstagram()">
+					<img src="instagram32.png" class="socialImage">
+					<p class="instagramSocial">Instagram</p>
+				</div>
+				<div id="twitterSocial" onclick="openTwitter()">
+					<img src="twitter32.png" class="socialImage">
+					<p class="otherSocial">Twitter</p>
+				</div>
+				<div id="facebookSocial" onclick="openFacebook()">
+					<img src="facebook32.png" class="socialImage">
+					<p class="otherSocial">Facebook</p>
+				</div>
+				<div id="paypalSocial" onclick="openPaypal()">
+					<img src="paypal32.png" class="socialImage">
+					<p class="otherSocial">Paypal</p>
+				</div>
+			</div>
+		</div>
+	  
     <h1 class="pageTitle">Society of Queens</h1>
     <div class="wrapper">
 		<div class="menu">
@@ -14,7 +36,7 @@
         		<a class ="leftLinkBarButton" id="currentPage" href="">Home</a>
             	<a class="linkBarButton" href="">Page 2</a>
             	<a class="linkBarButton" id="endOfLineOne" href="">Page 3</a>
-            	<a class="linkBarButton" id="startOfLineTwo" href="">Page 4</a>
+            	<a class="linkBarButton" id="startOfLineTwo" href="">Paypal</a>
             	<a class="linkBarButton" href="gallery.html">Gallery</a>
             	<a class="linkBarButton" id="rightLinkBarButton" href="aboutUs.html">About Us</a>
         	</div>
