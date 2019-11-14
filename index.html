@@ -11,53 +11,56 @@
 	    <div id="socialMenu">
 			<div id="mySidenav" class="sidenav">
 				<div id="instagramSocials" onclick="openInstagram()">
-					<img src="instagram32.png" class="socialImage">
+					<img src="Assets/instagram32.png" class="socialImage">
 					<p class="instagramSocial">Instagram</p>
 				</div>
 				<div id="twitterSocial" onclick="openTwitter()">
-					<img src="twitter32.png" class="socialImage">
+					<img src="Assets/twitter32.png" class="socialImage">
 					<p class="otherSocial">Twitter</p>
 				</div>
 				<div id="facebookSocial" onclick="openFacebook()">
-					<img src="facebook32.png" class="socialImage">
+					<img src="Assets/facebook32.png" class="socialImage">
 					<p class="otherSocial">Facebook</p>
 				</div>
 				<div id="paypalSocial" onclick="openPaypal()">
-					<img src="paypal32.png" class="socialImage">
+					<img src="Assets/paypal32.png" class="socialImage">
 					<p class="otherSocial">Paypal</p>
 				</div>
 			</div>
 		</div>
-	  
-    <h1 class="pageTitle">Society of Queens</h1>
-    <div class="wrapper">
-		<div class="menu">
-      		<div class="linkBar" style="text-align:center">
-        		<a class ="leftLinkBarButton" id="currentPage" href="">Home</a>
-            	<a class="linkBarButton" href="">Page 2</a>
-            	<a class="linkBarButton" id="endOfLineOne" href="">Page 3</a>
-            	<a class="linkBarButton" href="HTML/paypal.html" id="startOfLineTwo" href="">Paypal</a>
-            	<a class="linkBarButton" href="HTML/gallery.html">Gallery</a>
-            	<a class="linkBarButton" id="rightLinkBarButton" href="HTML/aboutUs.html">About Us</a>
-        	</div>
-		</div> <!--END OF NAVBAR -->
-        <div class="content">
-	        <div id="header">
-				<h2>Welcome to the society!</h2>
-			</div> <!-- END OF HEADER (WITHIN CONTENT BOX) -->
-	        <div id="countDown"></div>
-				<script type="text/javascript">
-			    	$("#countDown")
-					.countdown("2020/08/20", function(event) {
-			        	$(this).text(
-			            	event.strftime('%D Days, %H hours, %M minutes, and %S seconds to go!')
-							);
-			    	});
-				</script>
-        	</div> <!-- CLOSING OF CONTENT -->
-        <div class="footer">
-	        <p>Here's a paragraph,<br><br>but this time with a few 'br' tags!</p>
-      	</div>
-    </div>
-  </body>
+		
+		<div id="titleContainer">
+			<img class="pageLogo" src="Assets/combologo.png">
+		</div>
+		
+	    <div class="wrapper">
+			<div class="menu">
+	    		<div class="linkBar" style="text-align:center">
+	        		<a class ="leftLinkBarButton" id="currentPage" href="">Home</a>
+	            	<a class="linkBarButton" href="">Page 2</a>
+	            	<a class="linkBarButton" id="endOfLineOne" href="">Page 3</a>
+	            	<a class="linkBarButton" href="HTML/paypal.html" id="startOfLineTwo" href="">Paypal</a>
+	            	<a class="linkBarButton" href="HTML/gallery.html">Gallery</a>
+	            	<a class="linkBarButton" id="rightLinkBarButton" href="HTML/aboutUs.html">About Us</a>
+	        	</div>
+			</div> <!--END OF NAVBAR -->
+	        <div class="content">
+		        <div id="header">
+					<h2>Welcome to the society!</h2>
+				</div> <!-- END OF HEADER (WITHIN CONTENT BOX) -->
+		        <div id="countDown"></div>
+					<script type="text/javascript">
+				    	$("#countDown")
+						.countdown("2020/04/14", function(event) {
+				        	$(this).text(
+				            	event.strftime('%D Days, %H hours, %M minutes, and %S seconds to go!')
+								);
+				    	});
+					</script>
+	        </div> <!-- CLOSING OF CONTENT -->
+	        <div class="footer">
+		        <p>Here's a paragraph,<br><br>but this time with a few 'br' tags!</p>
+	    	</div>
+	    </div>
+	</body>
 </html>

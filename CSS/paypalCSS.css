@@ -1,12 +1,31 @@
 @import url('https://fonts.googleapis.com/css?family=Mansalva&display=swap');
 
+#titleContainer {
+	background-color:#4C494A;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 20%;
+	border-radius: 50px;
+	padding: 25px;
+}
+
+#titleContainer img {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	max-width: 100%;
+	max-height: 100px;
+	border-radius: 0;
+}
+
 p {
 	color: #eeffef;
 	font-family: "Avenir Next", Helvetica, sans-serif;
 	text-align: center;
+	font-size: 20px;
 }
 
-.pageTitle, h2 {
+h2 {
 	font-family: "Mansalva", Helvetica, sans-serif;
 	color:#FE76B6;
 	text-align: center;
@@ -15,7 +34,8 @@ p {
 
 body {
 	background-color: #0D010D;
-	margin: 0;
+	background-image: url("../Assets/backgroundart.jpg");
+	margin: 25px 0 0 0;
 }
 
 .wrapper {
@@ -65,7 +85,6 @@ body {
 .linkBarButton {
 	background-color:#0D010D;
 	opacity: 0.5;
-	transition: 0.5s;
 	color: #FDF508;
 	font-family: "Mansalva", Helvetica, sans-serif;
 	text-align: center;
@@ -91,14 +110,14 @@ body {
 	opacity: 0.5;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	transition: 0.5s;
+	transition: border-radius 0.5s;
 }
 
 #rightLinkBarButton {
 	border-top-right-radius: 25px;
 	background-color:#0D010D;
 	opacity: 0.5;
-	transition: 0.5s;
+	transition: border-radius 0.5s;
 }
 
 #currentPage {
@@ -113,79 +132,94 @@ body {
 	padding-bottom: 10px;
 }
 
-.galleryImage {
-    max-width:100%;
-    margin-left: auto;
-	margin-right: auto;
-	display: block;
-	border-top-left-radius: 25px;
-	border-top-right-radius: 25px;
-	transition: 0.3s;
+/* BEGINNING OF FLOATING RIGHT HAND MENU FOR SOCIALS :) */
+
+#socialMenu {
+	position: fixed;
+	right: 0;
+	top: 40%;
+	width: 8em;
+	margin-top: -2.5em;
 }
 
-.galleryImageSeparator {
-	margin-top: 0px;
-}
-
-div.gallery:hover {
-    cursor: pointer;
-    opacity: 0.7;
-}
-
-div.desc {
-    padding: 15px;
-    text-align: center;
-    padding: 0px;
-}
-
-div.gallery {
-    margin: 10px;
-    border: 1px solid #ccc;
-    width: 250px;
-    border-radius: 25px;
-}
-
-.sideBySideContent {
-	grid-template-columns: repeat(4, 1fr);
+#mySidenav div {
+	transition: 0.5s;
+	grid-template-columns: repeat(5, 1fr);
 	display: grid;
-	margin: 5px;
+	position: absolute;
+	right: -110px;
+	padding: 10px 0px 10px 10px;
+	width: 150px;
+	text-decoration: none;
+	font-size: 20px;
+	color: white;
+	border-radius: 10px 0 0 10px;
+	box-shadow: 5px 5px rgba(0, 0, 0, 0.3);
 }
 
-.gallery {
-	align-self: center;
-    justify-self: center;
+#mySidenav div:hover {
+  right: 0; /* move items to the left, showing them on rollover*/
+  cursor: pointer; /* clicky clicky */
 }
 
-@media screen and (max-width: 1275px) {
-	
-	.sideBySideContent {
-		grid-template-columns: repeat(3, 1fr);
-	}
-	
+.instagramSocial {
+	background-image: linear-gradient(45deg, #515BD4, #8134AF, #DD2A7B, #FEDA77, #F58529);
+	-webkit-background-clip: text;
+	color: transparent;
+	grid-column: span 4;
+	margin: 3px 0px 0px 0px;
 }
 
-@media screen and (max-width: 960px) {
+.otherSocial {
+	text-align: left;
+	grid-column: span 4;
+	height: 32px;
+	margin: 3px 0px 0px 8px;
+	vertical-align: middle;
+}	
+
+#instagramSocials {
+	top: 20px;
+	background-color: #EEEEEE;
+	height: 32px;
+}
+
+#twitterSocial {
+  top: 82px;
+  background-color: #6699FF; /* Twitter Blue */
+  height: 32px;
+  font-family: "Avenir Next", sans-serif
+}
+
+#facebookSocial {
+  top: 144px;
+  background-color: #3B5998; /* Facebook Blue */
+  height: 32px;
+  font-family: "Avenir Next", sans-serif
+}
+
+#paypalSocial {
+  top: 206px;
+  background-color: #3B7BBF; /* Paypal Blue */
+  height: 32px;
+  font-family: "Avenir Next", sans-serif
+}
+
+/* END OF SOCIAL MENU */
+
+@media screen and (max-width: 750px) {
 	
 	.linkBar {
-	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: 2;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: 2;
 	}
     
     .menu {
         grid-column: span 12;
     }
-    
-    .conent {
-        grid-column: span 12;
-    }
 	
 	.wrapper {
 		grid-template-rows: 3;
-	}
-	
-	.sideBySideContent {
-		grid-column: span 8;
-		grid-template-columns: repeat(2,1fr);
 	}
 	
 	#endOfLineOne {
@@ -197,17 +231,4 @@ div.gallery {
 		border-top-right-radius: 0px;
 	}
 	
-}
-
-
-@media screen and (max-width: 650px) {
-	
-	.sideBySideContent {
-	grid-template-columns: repeat(1,1fr);
-	}
-	
-	.modal-content {
-    width: 100%;
-  }
-	
-}
+} 
