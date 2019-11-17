@@ -8,6 +8,8 @@
 	border-radius: 50px;
 	padding: 25px;
 	transition: 0.5s;
+	border: #FE76B6 solid 3px;
+	box-shadow: 0px 0px 0px 3px #FDF508 inset;
 }
 
 #titleContainer img {
@@ -166,33 +168,13 @@ div.gallery {
 }
 
 .sideBySideContent {
-	grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: repeat(5, 1fr);
 	display: grid;
 }
 
 .gallery {
 	align-self: center;
     justify-self: center;
-}
-
-#overlay1, #overlay2, #overlay3, #overlay4, #overlay5, #overlay6, #overlay7, #overlay8 {
-  position: fixed; /* Sit on top of the page content */
-  display: none; /* Hidden by default */
-  width: 100%; /* Full width (cover the whole page) */
-  height: 100%; /* Full height (cover the whole page) */
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
-  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
-  cursor: pointer; /* Add a pointer on hover */
-  transition: 1s;
-  -moz-transition: 1s;
-  -webkit-transition: 1s;
-  -ms-transition: 1s;
-  -o-transition: 1s;
-  opacity: 0;
 }
 
 #text{
@@ -238,6 +220,9 @@ div.gallery {
   color: #ccc;
   padding: 10px 0;
   height: 150px;
+  margin-top: 10px;
+  font-family: "Avenir Next", sans-serif;
+  font-size: 20px;
 }
 
 /* Add Animation */
@@ -254,8 +239,8 @@ div.gallery {
 }
 
 @keyframes zoom {
-  from {transform: scale(0.1)} 
-  to {transform: scale(1)}
+  from {transform: scale(0); opacity: 0} 
+  to {transform: scale(1); opacity: 1}
 }
 
 /* The Close Button */
@@ -351,7 +336,15 @@ div.gallery {
 
 /* END OF SOCIAL MENU */
 
-@media screen and (max-width: 1275px) {
+@media screen and (max-width: 1536px) {
+	
+	.sideBySideContent {
+		grid-template-columns: repeat(4, 1fr);
+	}
+	
+}
+
+@media screen and (max-width: 1280px) {
 	
 	.sideBySideContent {
 		grid-template-columns: repeat(3, 1fr);
@@ -365,21 +358,12 @@ div.gallery {
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: 2;
 	}
-    
-    .menu {
-        grid-column: span 12;
-    }
-    
-    .conent {
-        grid-column: span 12;
-    }
 	
 	.wrapper {
 		grid-template-rows: 3;
 	}
 	
 	.sideBySideContent {
-		grid-column: span 8;
 		grid-template-columns: repeat(2,1fr);
 	}
 	
@@ -395,10 +379,27 @@ div.gallery {
 }
 
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 640px) {
 	
 	.sideBySideContent {
 	grid-template-columns: repeat(1,1fr);
+	}
+	
+	.modal-content {
+    width: 100%;
+  }
+	
+}
+
+@media (pointer:none), (pointer:coarse) {
+	
+	.sideBySideContent {
+	grid-template-columns: repeat(2,1fr);
+	}
+	
+	.linkBar {
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 2;
 	}
 	
 	.modal-content {

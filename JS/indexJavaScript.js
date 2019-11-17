@@ -24,9 +24,6 @@ function openFacebook() {
 function openPaypal() {
 	window.open("https://www.google.co.uk", "_blank");
 }
-
-
-
 /*!
  * The Final Countdown for jQuery v2.2.0 (http://hilios.github.io/jQuery.countdown/)
  * Copyright (c) 2016 Edson Hilios
