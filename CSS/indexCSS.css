@@ -85,7 +85,7 @@ body {
 	grid-row: 2;
 	grid-column: span 12;
 	background-color:#4C494A;
-	padding: 0 50px 0 50px;
+	padding: 0 100px 0 100px;
 }
 
 .footer {
@@ -419,10 +419,10 @@ hr {
 	display: grid;
 	grid-template-rows: repeat(3, 1fr); 
 	margin: auto;
-	background-color:#ccc;
+	background-color:#fff;
 	border-radius: 25px;
 	height: 50%;
-	width: 66%
+	width: 66%;
 }
 
 #calendarTop{
@@ -434,16 +434,17 @@ hr {
 
 #calendarMonth {
 	margin-top: 20px;;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 	font-size: 40px;
 }
 
 #calendarDay {
-	grid-row: 2 / span 2;
-	font-size: 60px;
+	font-size: 50px;
 	margin-top: auto;
 	margin-bottom: auto;
 	color: #000;
+	height: 50%;
+	
 }
 
 #eventName {
@@ -472,7 +473,14 @@ hr {
 
 @media screen and (max-width: 1400px) {
 	
+	.content {
+		
+		padding-left: 50px;
+		padding-right: 50px;
+		
 	}
+	
+}
 
 
 @media screen and (max-width: 750px) {
