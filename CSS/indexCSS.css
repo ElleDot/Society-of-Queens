@@ -65,14 +65,20 @@ body {
 
 #welcomeHeader {
 	font-family: "Mansalva", Helvetica, sans-serif;
-	font-size: 40px;
+	font-size: 4vw;
 	margin: 0px 0px 10px 0px;
 	color: #FDF508;
 }
 
 #header {
-	font-size: 50px;
+	font-size: 5vw;
 	transition: 0.2s;
+}
+
+.welcomeMessage {
+	text-align: left;
+	margin: 25px;
+	font-size: 1.5vw;
 }
 	
 .content {
@@ -257,13 +263,15 @@ body {
 }
 
 .sideBySideContent {
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(5, 1fr);
 	display: grid;
 	margin-bottom: 25px;
 }
 
 .textContent {
 	grid-column: span 3;
+	margin-top: auto;
+	margin-bottom: auto;
 }
 
 hr {
@@ -395,25 +403,26 @@ hr {
 }
 
 .descriptionContainer {
-	margin: 25px;
-	grid-column: span 4;
+	margin: 25px 25px 25px 0px;
+	grid-column: span 3;
 	background-color:#323031;
 	padding: 0px 25px 0px 25px;
 	border-radius: 25px;
 }
 
-.sideBySideContent {
-	grid-template-columns: repeat(5, 1fr);
+.sideBySideEventContent {
+	grid-template-columns: repeat(4, 1fr);
 	display: grid;
 }
 
 .calendarView {
 	display: grid;
 	grid-template-rows: repeat(3, 1fr); 
-	margin: 25px 0px 25px 25px;
+	margin: auto;
 	background-color:#ccc;
 	border-radius: 25px;
-	min-width: 100px;
+	height: 50%;
+	width: 66%
 }
 
 #calendarTop{
@@ -458,7 +467,13 @@ hr {
 
 #eventDescription {
 	text-align: left;
+	font-size: 2vw;
 }
+
+@media screen and (max-width: 1400px) {
+	
+	}
+
 
 @media screen and (max-width: 750px) {
 	
@@ -479,14 +494,6 @@ hr {
 	#rightLinkBarButton {
 		border-top-right-radius: 0px;
 	}
-    
-    .menu {
-        grid-column: span 12;
-    }
-    
-    .content {
-        grid-column: span 12;
-    }
 	
 	.wrapper {
 		grid-template-rows: 100px 1fr 1fr;
