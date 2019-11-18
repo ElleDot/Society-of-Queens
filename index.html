@@ -42,8 +42,8 @@
 	    <div class="wrapper">
 			<div class="menu">
 	    		<div class="linkBar" style="text-align:center">
-	        		<a class ="leftLinkBarButton" id="currentPage" href="">Home</a>
-	            	<a class="linkBarButton" href="">Page 2</a>
+	        		<a class ="leftLinkBarButton" id="currentPage" href="#">Home</a>
+	            	<a class="linkBarButton" href="HTML/events.html">Events</a>
 	            	<a class="linkBarButton" id="endOfLineOne" href="">Page 3</a>
 	            	<a class="linkBarButton" href="HTML/paypal.html" id="startOfLineTwo" href="">Paypal</a>
 	            	<a class="linkBarButton" href="HTML/gallery.html">Gallery</a>
@@ -61,7 +61,7 @@
 					<div class="textContent">
 						<p id="welcomeHeader">What's on at the SoQ?</p>
 						<hr>
-						<p>Message from the team would go here</p>
+						<p>Message from the team would go here, with any extra information being added.</p>
 					</div>
 					
 					<div class="slideshowContent">
@@ -147,20 +147,31 @@
 						
 				</div> <!-- END OF SIDEBYSIDECONTENT -->
 				
-				<div id="countDown"></div>
-				<script type="text/javascript">
-			    	$("#countDown")
-					.countdown("2020/04/14", function(event) {
-			        	$(this).text(
-			            	event.strftime('%D Days, %H hours, %M minutes, and %S seconds to go!')
-							);
-			    	});
-				</script>
+				<div class="roundedContainer">
+		        <div class="sideBySideContent">
+			        <div class="calendarView" onclick="memberFiveSocial()">
+				        <div id="calendarTop">
+				        	<p id="calendarMonth">Dec</p>
+				        </div>
+						<p id="calendarDay">14</p>
+					</div>
+					<div class="descriptionContainer">
+						<h2 id="eventName">Society Charity Bake Sale</h2>
+						<h3 id="eventLocation">The Hubs, Paternoster Row</h3>
+						<hr>
+						<p id="countdownLabel">Loading...</p>
+						<p id="eventDescription">This is a test event for the homepage. There probably isn't going to be a charity bake sale and this is all just filler text used to test the formatting rules of the webpage. Apologies for the lack of cake.</p>
+					</div>
+		        </div> <!-- CLOSING OF sideBySideContent -->   
+	        </div>
+				
+				
 					
 					
 	        </div> <!-- CLOSING OF CONTENT -->
 	        <div class="footer">
 		        <p>Here's a paragraph,<br><br>but this time with a few 'br' tags!</p>
+		        <p>© E Agars-Smith 2019</p>
 	    	</div>
 	    </div>
 	</body>

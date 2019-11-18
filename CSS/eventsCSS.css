@@ -18,20 +18,21 @@
 	display: block;
 	max-width: 100%;
 	max-height: 100px;
+	border-radius: 0;
 }
 
 p {
 	color: #eeffef;
 	font-family: "Avenir Next", Helvetica, sans-serif;
 	text-align: center;
-	font-size: 20px;
+	font-size: 20px
 }
 
 h2 {
 	font-family: "Mansalva", Helvetica, sans-serif;
 	color:#FE76B6;
 	text-align: center;
-	font-size: 40px
+	font-size: 40px;
 }
 
 body {
@@ -67,6 +68,12 @@ body {
 
 #headerGallerySeparator {
 	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+#aboutUsMessage {
+	padding-right: 100px;
+    padding-left: 100px;
 }
 	
 .content {
@@ -87,7 +94,7 @@ body {
 .linkBarButton {
 	background-color:#0D010D;
 	opacity: 0.5;
-	transition: 0.5s;
+	transition:  opacity, background-color 0.5s;
 	color: #FDF508;
 	font-family: "Mansalva", Helvetica, sans-serif;
 	text-align: center;
@@ -113,14 +120,13 @@ body {
 	opacity: 0.5;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	transition: 0.5s;
+	transition:  opacity, background-color 0.5s;
 }
 
 #rightLinkBarButton {
 	border-top-right-radius: 25px;
 	background-color:#0D010D;
 	opacity: 0.5;
-	transition: 0.5s;
 }
 
 #currentPage {
@@ -135,130 +141,181 @@ body {
 	padding-bottom: 10px;
 }
 
-.galleryImage {
-    max-width:100%;
-    margin-left: auto;
-	margin-right: auto;
-	display: block;
-	border-top-left-radius: 22px;
-	border-top-right-radius: 22px;
+.roundedContainer {
+	border-radius: 25px;
+	margin-bottom: 25px;
+	background-color: #0D010D;
+}
+
+#lastRoundedContainer {
+	border-radius: 25px;
+	margin-bottom: auto;
+	background-color: #0D010D;
+}
+
+#tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+#tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #FDF508;
+  text-align: center;
+  border-radius: 10px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 101%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.5s;
+  font-family: "Avenir Next", sans-serif;
+}
+
+#tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+#tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.leftCard {
+	grid-column: span 1;
 	transition: 0.3s;
+	width: auto;
+	margin-left: 25px;
+	background-color:#323031;
+	border-radius: 25px;
 }
 
-.galleryImageSeparator {
-	margin-top: 0px;
+.rightCard {
+	grid-column: span 1;
+	transition: 0.3s;
+	width: auto;
+	margin-right: 25px;
+	background-color:#323031;
+	border-radius: 25px;
 }
 
-div.gallery:hover {
-    cursor: pointer;
-    opacity: 0.7;
+img {
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
 }
 
-div.desc {
-    padding: 15px;
-    text-align: center;
-    padding: 0px;
+.leftCard:hover, .rightCard:hover{
+  cursor: pointer;
+  opacity: 0.8;
 }
 
-div.gallery {
-    margin: 10px;
-    border: 3px solid #fff;
-    width: 250px;
-    border-radius: 25px;
+.container {
+  padding: 2px 16px;
+}
+
+.descriptionContainer {
+	grid-column: span 4;
+	background-color:#323031;
+	padding: 0 2% 0 2%;
+	border-radius: 25px;
+	margin-right: 25px;
+}
+
+#leftDescriptionContainer {
+	margin-left: 25px;
+	margin-right: 0px;
 }
 
 .sideBySideContent {
-	grid-template-columns: repeat(5, 1fr);
 	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-gap: 2%;
+	padding-top: 2%;
+	padding-bottom: 2%;
 }
 
-.gallery {
-	align-self: center;
-    justify-self: center;
+.queenName {
+	text-align: left;
+	margin: 20px 0px 0px 0px;
+	color: #FDF508;
+	font-size: 40px;
+	font-family: "Avenir Next", Helvetica, sans-serif;
+	font-weight: 700;
 }
 
-#text{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  font-size: 50px;
-  color: white;
-  transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
+.queenRole {
+	text-align: left;
+	margin: 0px;
+	color:#FE76B6;
+	font-size: 30px;
+	font-family: "Avenir Next", Helvetica, sans-serif;
+	font-weight: 300;
 }
 
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+.queenBlurb {
+	text-align: left;
+	margin-right: 10%	
 }
 
-/* Modal Content (image) */
-.modal-content {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
+.queenTitle {
+	text-align: center;
+	font-family: "Mansalva", Helvetica, sans-serif;
+	color: #FDF508;
+	font-size: 25px;
+	margin-top: 10px;
+	margin-bottom: 0px;
+	
 }
 
-/* Caption of Modal Image */
-#caption {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  text-align: center;
-  color: #ccc;
-  padding: 10px 0;
-  height: 150px;
-  margin-top: 10px;
-  font-family: "Avenir Next", sans-serif;
-  font-size: 20px;
+.cardDescription {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 20px;
 }
 
-/* Add Animation */
-.modal-content, #caption {  
-  -webkit-animation-name: zoom;
-  -webkit-animation-duration: 0.6s;
-  animation-name: zoom;
-  animation-duration: 0.6s;
+.instagramHandle {
+	color: #eeffef;
+	font-family: "Avenir Next", Helvetica, sans-serif;
+	text-align: center;
+	width: 100%;
+	font-size: 15px;
+	opacity: 0.75;
+	margin-bottom: 10px;
 }
 
-@-webkit-keyframes zoom {
-  from {-webkit-transform: scale(0)} 
-  to {-webkit-transform: scale(1)}
+.queenNameRight {
+	text-align: right;
+	color: #FDF508;
+	margin: 20px 0px 0px 0px;
+	font-size: 40px;
+	font-family: "Avenir Next", Helvetica, sans-serif;
+	font-weight: 700;
 }
 
-@keyframes zoom {
-  from {transform: scale(0); opacity: 0} 
-  to {transform: scale(1); opacity: 1}
+.queenRoleRight {
+	text-align: right;
+	color:#FE76B6;
+	margin: 0;
+	font-size: 30px;
+	font-family: "Avenir Next", Helvetica, sans-serif;
+	font-weight: 300;
 }
 
-/* The Close Button */
-.close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #EEFFEF;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
+.queenBlurbRight {
+	text-align: right;
+	margin-left: 10%
 }
 
 /* BEGINNING OF FLOATING RIGHT HAND MENU FOR SOCIALS :) */
@@ -334,37 +391,17 @@ div.gallery {
   font-family: "Avenir Next", sans-serif
 }
 
+.socialImage {
+	border-radius: 0px;
+}
+
 /* END OF SOCIAL MENU */
 
-@media screen and (max-width: 1536px) {
-	
-	.sideBySideContent {
-		grid-template-columns: repeat(4, 1fr);
-	}
-	
-}
-
-@media screen and (max-width: 1280px) {
-	
-	.sideBySideContent {
-		grid-template-columns: repeat(3, 1fr);
-	}
-	
-}
-
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 750px) {
 	
 	.linkBar {
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: 2;
-	}
-	
-	.wrapper {
-		grid-template-rows: 3;
-	}
-	
-	.sideBySideContent {
-		grid-template-columns: repeat(2,1fr);
 	}
 	
 	#endOfLineOne {
@@ -372,38 +409,20 @@ div.gallery {
 		border-top-right-radius: 25px;
 	}
 	
-	#rightLinkBarButton {
+	.rightLinkBarButton {
 		border-top-right-radius: 0px;
 	}
+    
+    .menu {
+        grid-column: span 12;
+    }
+    
+    .content {
+        grid-column: span 12;
+    }
 	
-}
-
-
-@media screen and (max-width: 640px) {
-	
-	.sideBySideContent {
-	grid-template-columns: repeat(1,1fr);
+	.wrapper {
+		grid-template-rows: 100px 1fr 1fr;
 	}
-	
-	.modal-content {
-    width: 100%;
-  }
-	
-}
-
-@media (pointer:none), (pointer:coarse) {
-	
-	.sideBySideContent {
-	grid-template-columns: repeat(2,1fr);
-	}
-	
-	.linkBar {
-	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: 2;
-	}
-	
-	.modal-content {
-    width: 100%;
-  }
 	
 }

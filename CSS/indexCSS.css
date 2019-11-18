@@ -23,6 +23,7 @@ p {
 	color: #eeffef;
 	font-family: "Avenir Next", Helvetica, sans-serif;
 	text-align: center;
+	font-size: 20px;
 }
 
 h2 {
@@ -66,13 +67,7 @@ body {
 	font-family: "Mansalva", Helvetica, sans-serif;
 	font-size: 40px;
 	margin: 0px 0px 10px 0px;
-}
-
-.header {
-  padding: 10px 16px;
-  margin: 0px;
-  background: #555;
-  color: #f1f1f1;
+	color: #FDF508;
 }
 
 #header {
@@ -85,7 +80,6 @@ body {
 	grid-column: span 12;
 	background-color:#4C494A;
 	padding: 0 50px 0 50px;
-	height: 1000px;
 }
 
 .footer {
@@ -163,7 +157,7 @@ body {
   cursor: pointer;
   position: absolute;
   top: 50%;
-  width: 5%;
+  width: 3%;
   margin-top: -22px;
   padding: 16px;
   color: white;
@@ -204,7 +198,7 @@ body {
 .numbertext {
   color: #f2f2f2;
   font-size: 12px;
-  padding: 8px 12px;
+  padding: 8px 0px;
   position: absolute;
   top: 0;
   left: 40%;
@@ -265,10 +259,11 @@ body {
 .sideBySideContent {
 	grid-template-columns: repeat(3, 1fr);
 	display: grid;
+	margin-bottom: 25px;
 }
 
 .textContent {
-	grid-column: span 2;
+	grid-column: span 3;
 }
 
 hr {
@@ -278,11 +273,11 @@ hr {
 }
 
 .slideshowContent {
-	grid-column: span 1;
+	grid-column: span 2;
 	background-color: #0D010D;
 	border: 5px solid white;
 	border-radius: 25px;
-	box-shadow: 5px 5px rgba(0, 0, 0, 0.3);
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 	padding: 25px;
 }
 
@@ -304,12 +299,12 @@ hr {
 	right: -110px;
 	transition: 0.5s;
 	padding: 10px 0px 10px 10px;
-	width: 160px;
+	width: 150px;
 	text-decoration: none;
 	font-size: 20px;
 	color: white;
 	border-radius: 10px 0 0 10px;
-	box-shadow: 5px 5px rgba(0, 0, 0, 0.3);
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
 
 #mySidenav div:hover {
@@ -381,11 +376,88 @@ hr {
   position: absolute;
   top: 50%;
   left: 50%;
-  font-size: 30px;
+  font-size: 40px;
   font-family: "Avenir Next", sans-serif;
   color: white;
   transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
+}
+
+.roundedContainer {
+	border-radius: 25px;
+	margin-bottom: 25px;
+	background-color: #0D010D;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+.descriptionContainer {
+	margin: 25px;
+	grid-column: span 4;
+	background-color:#323031;
+	padding: 0px 25px 0px 25px;
+	border-radius: 25px;
+}
+
+.sideBySideContent {
+	grid-template-columns: repeat(5, 1fr);
+	display: grid;
+}
+
+.calendarView {
+	display: grid;
+	grid-template-rows: repeat(3, 1fr); 
+	margin: 25px 0px 25px 25px;
+	background-color:#ccc;
+	border-radius: 25px;
+	min-width: 100px;
+}
+
+#calendarTop{
+	grid-row: 1;
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+	background-color: #f36b6b;
+}
+
+#calendarMonth {
+	margin-top: 20px;;
+	margin-bottom: 20px;
+	font-size: 40px;
+}
+
+#calendarDay {
+	grid-row: 2 / span 2;
+	font-size: 60px;
+	margin-top: auto;
+	margin-bottom: auto;
+	color: #000;
+}
+
+#eventName {
+	text-align: left;
+	font-size: 30px;
+	margin-bottom: 0;
+	font-weight: 900;
+}
+
+#eventLocation {
+	text-align: left;
+	font-size: 25px;
+	margin-top: 10px;
+	color: #FDF508;
+	font-family: "Mansalva", cursive
+}
+
+#countdownLabel {
+	text-align: left;
+}
+
+#eventDescription {
+	text-align: left;
 }
 
 @media screen and (max-width: 750px) {
