@@ -1,25 +1,31 @@
 function memberOneSocial() {
-	window.open("https://www.instagram.com/a.kular/", "_blank");
+	window.open("https://www.instagram.com/itssarahlouuise/", "_blank");
 }
 
 function memberTwoSocial() {
-	window.open("https://www.instagram.com/eleanorgrace___/", "_blank");
-}
-
-function memberThreeSocial() {
-	window.open("https://www.instagram.com/reemakh4n1/", "_blank");
-}
-
-function memberFourSocial() {
-	window.open("https://www.instagram.com/_ellllb/", "_blank");
-}
-
-function memberFiveSocial() {
 	window.open("https://www.instagram.com/angelorola/", "_blank");
 }
 
+function memberThreeSocial() {
+	window.open("https://www.instagram.com/ralferine/", "_blank");
+}
+
+function memberFourSocial() {
+	window.open("https://www.instagram.com/eleanorgrace___/", "_blank");
+}
+
+function memberFiveSocial() {
+	window.open("https://www.instagram.com/rumbidzaimccabe/", "_blank");
+}
+
 function memberSixSocial() {
-	window.open("https://www.instagram.com/itssarahlouuise/", "_blank");
+	window.open("https://www.instagram.com/ndidixo/", "_blank");
+}
+function memberSevenSocial() {
+	window.open("https://www.instagram.com/jada_sym/", "_blank");
+}
+function memberEightSocial() {
+	window.open("https://www.instagram.com/reemakh4n1/", "_blank");
 }
 
 function openInstagram() {

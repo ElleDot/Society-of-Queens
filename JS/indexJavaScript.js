@@ -40,19 +40,20 @@ var x = setInterval(function() {
   // Calculate component values
   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));  
     
   // Output to p tag with neat little checks to have correct use of plurals
   
 	if (hours == 1) {
-		document.getElementById("countdownLabel").innerHTML = "December 14th, 18:00 - " + days + " days,  " + hours + " hour to go!";
+		document.getElementById("countdownLabel").innerHTML = "December 14th, 18:00 - " + days + " days,  " + hours + " hour and " + minutes + " minutes to go!";
 	}
 	else if (days == 1) {
-		document.getElementById("countdownLabel").innerHTML = "December 14th, 18:00 - " + days + " day,  " + hours + " hours to go!";
+		document.getElementById("countdownLabel").innerHTML = "December 14th, 18:00 - " + days + " day,  " + hours + " hours and " + minutes + " minutes to go!";
 	}
 	else if (hours == 1 && hours == 1) {
-		document.getElementById("countdownLabel").innerHTML = "December 14th, 18:00 - " + days + " day,  " + hours + " hour to go!";
+		document.getElementById("countdownLabel").innerHTML = "December 14th, 18:00 - " + days + " day,  " + hours + " hour and " + minutes + " minutes to go!";
 	} else {
-		document.getElementById("countdownLabel").innerHTML = "December 14th, 18:00 - " + days + " days,  " + hours + " hours to go!";
+		document.getElementById("countdownLabel").innerHTML = "December 14th, 18:00 - " + days + " days,  " + hours + " hours and " + minutes + " minutes to go!";
 	}
   
       

@@ -142,7 +142,7 @@ body {
 
 .roundedContainer {
 	border-radius: 25px;
-	margin-bottom: 25px;
+	margin: auto 50px 25px 50px;
 	background-color: #0D010D;
 }
 
@@ -265,7 +265,8 @@ img {
 
 .queenBlurb {
 	text-align: left;
-	margin-right: 10%	
+	margin-right: 10%;
+	font-size: 1.3vw;	
 }
 
 .queenTitle {
@@ -314,7 +315,8 @@ img {
 
 .queenBlurbRight {
 	text-align: right;
-	margin-left: 10%
+	margin-left: 10%;
+	font-size: 1.3vw;	
 }
 
 /* BEGINNING OF FLOATING RIGHT HAND MENU FOR SOCIALS :) */
