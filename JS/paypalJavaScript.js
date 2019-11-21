@@ -11,6 +11,8 @@ function openFacebook() {
 }
 
 function openPaypal() {
-	window.open("https://www.google.co.uk", "_blank");
+	var result = confirm("You will be taken to our PayPal donation page."); 
+            if (result == true) { 
+                window.open("https://www.paypal.me/SOQinc", "_blank"); 
+            }
 }
-

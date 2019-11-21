@@ -17,6 +17,7 @@
 	display: block;
 	max-width: 100%;
 	max-height: 100px;
+	border-radius: 0;
 }
 
 p {
@@ -41,7 +42,6 @@ body {
 .wrapper {
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
-	grid-template-rows: 3;
 	padding: 0px;
 	margin: 25px;
 }
@@ -439,12 +439,10 @@ hr {
 }
 
 #calendarDay {
-	font-size: 50px;
-	margin-top: auto;
-	margin-bottom: auto;
-	color: #000;
-	height: 50%;
-	grid-row: span 2;
+	font-size: 5vw;
+    margin-top: 5px;
+    margin-bottom: 25%;
+    color: #000;
 	
 }
 
