@@ -444,19 +444,20 @@ hr {
 	margin-bottom: auto;
 	color: #000;
 	height: 50%;
+	grid-row: span 2;
 	
 }
 
 #eventName {
 	text-align: left;
-	font-size: 30px;
+	font-size: 2.5vw;
 	margin-bottom: 0;
 	font-weight: 900;
 }
 
 #eventLocation {
 	text-align: left;
-	font-size: 25px;
+	font-size: 2vw;
 	margin-top: 10px;
 	color: #FDF508;
 	font-family: "Mansalva", cursive
@@ -464,11 +465,14 @@ hr {
 
 #countdownLabel {
 	text-align: left;
+	font-size: 1.7vw;
+	font-weight: 900;
 }
 
 #eventDescription {
 	text-align: left;
-	font-size: 2vw;
+	font-size: 1.7vw;
+	margin-top: 0;
 }
 
 @media screen and (max-width: 1400px) {
@@ -478,6 +482,12 @@ hr {
 		padding-left: 50px;
 		padding-right: 50px;
 		
+		
+	}
+	
+	.welcomeMessage {
+		
+		font-size: 1.8vw;
 	}
 	
 }
