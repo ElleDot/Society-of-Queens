@@ -27,7 +27,12 @@ p {
 	font-size: 20px;
 }
 
-h2 {
+#fromMessage {
+	text-align: right;
+	font-family: 'Mansalva', cursive;
+}
+
+h1 {
 	font-family: "Mansalva", Helvetica, sans-serif;
 	color:#FE76B6;
 	text-align: center;
@@ -71,8 +76,8 @@ body {
 }
 
 #header {
-	font-size: 5vw;
 	transition: 0.2s;
+	font-size: 4vw;
 }
 
 .welcomeMessage {

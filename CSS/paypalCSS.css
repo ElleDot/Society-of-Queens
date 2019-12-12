@@ -208,12 +208,6 @@ body {
 
 /* END OF SOCIAL MENU */
 
-#donationMessage {
-	margin-left: 15%;
-	margin-right: 15%;
-	
-}
-
 b {
 	font-size: 40px;
 }
@@ -227,6 +221,50 @@ b {
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
+}
+
+.sideBySideContent {
+	grid-template-columns: repeat(5, 1fr);
+	display: grid;
+	margin-bottom: 25px;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+#pictureDiv {
+	grid-column: span 3;
+}
+
+#groupPic {
+	max-width: 90%;
+	border-style: solid;
+	border-color: #FDF508;
+    margin: 10px auto 10px auto;
+    display: block;
+}
+
+#messageDiv {
+	margin: auto;
+	grid-column: span 2;
+}
+
+#messageDiv > p {
+	text-align: left;
+	font-size: 1.8vw;
+}
+
+#lastMessage {
+	margin-top: 0px;
+}
+
+#fromMessage {
+	font-family: 'Mansalva', cursive;
+	margin-bottom: 25px;
+}
+
+input {
+    margin: auto;
+    display: block;
 }
 
 @media screen and (max-width: 750px) {
