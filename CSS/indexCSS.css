@@ -257,6 +257,7 @@ body {
 /* END OF SLIDESHOW CSS */
 
 .slideshowImage {
+	width:100%;
 	max-width: 512px;
 	display: block;
 	margin-left: auto;
@@ -456,6 +457,8 @@ hr {
 	font-size: 2.5vw;
 	margin-bottom: 0;
 	font-weight: 900;
+	color: #FE76B6;
+    font-family: "Mansalva", cursive;
 }
 
 #eventLocation {
