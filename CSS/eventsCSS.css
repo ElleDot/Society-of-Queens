@@ -31,7 +31,7 @@ h2 {
 	font-family: "Mansalva", Helvetica, sans-serif;
 	color:#FE76B6;
 	text-align: center;
-	font-size: 40px;
+	font-size: 50px
 }
 
 body {
@@ -43,7 +43,6 @@ body {
 .wrapper {
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
-	grid-template-rows: 3;
 	padding: 0px;
 	margin: 25px;
 }
@@ -407,6 +406,8 @@ img {
 	display: block;
 }
 
+/* IF THE SCREEN WIDTH IS SMALL, ADJUST THE WRAPPER TO ACCOMMODATE THE SCREEN BETTER */
+
 @media screen and (max-width: 750px) {
 	
 	.linkBar {
@@ -431,8 +432,40 @@ img {
         grid-column: span 12;
     }
 	
-	.wrapper {
-		grid-template-rows: 100px 1fr 1fr;
+}
+
+/* IF THE USER IS ON A DEVICE WITHOUT A POINTER (TOUCHSCREEN), MAKE THE UI TOUCH-FRIENDLY */
+
+@media (pointer:none), (pointer:coarse) {
+	
+	.sideBySideContent {
+	grid-template-columns: repeat(2,1fr);
+	}
+	
+	.linkBar {
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 2;
+	}
+	
+	#rightLinkBarButton {
+		border-top-right-radius: 0px;
+	}
+	
+	.rightLinkBarButton {
+		border-top-right-radius: 0px;
+	}
+	
+	.sideBySideContent {
+		grid-template-columns: repeat(2,1fr);
+	}
+	
+	#endOfLineOne {
+		transition: 0s;
+		border-top-right-radius: 25px;
+	}
+	
+	.linkBarButton, #currentPage, .leftLinkBarButton {
+		padding:5% 0;
 	}
 	
 }
