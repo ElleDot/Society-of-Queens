@@ -536,8 +536,9 @@ hr {
 	
 }
 
+/*
 @media all and (orientation:portrait) {
-/* Style adjustments for portrait mode goes here */
+Style adjustments for portrait mode goes here 
 	
 	#orientationOverlay {
 		display: block;
@@ -546,10 +547,11 @@ hr {
 }
 
 @media all and (orientation:landscape) {
-/* Style adjustments for portrait mode goes here */
+Style adjustments for portrait mode goes here 
 	
 	#orientationOverlay {
 		display: none;
 	}
 
 }
+*/

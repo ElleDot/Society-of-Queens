@@ -1,0 +1,457 @@
+@import url('https://fonts.googleapis.com/css?family=Mansalva&display=swap');
+
+#titleContainer {
+	background-color:#4C494A;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 20%;
+	border-radius: 50px;
+	padding: 25px;
+	border: #FE76B6 solid 3px;
+	box-shadow: 0px 0px 0px 3px #FDF508 inset;
+}
+
+#titleContainer img {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	max-width: 100%;
+	max-height: 100px;
+	border-radius: 0;
+}
+
+p {
+	color: #eeffef;
+	font-family: "Avenir Next", Helvetica, sans-serif;
+	text-align: center;
+	font-size: 20px
+}
+
+h2 {
+	font-family: "Mansalva", Helvetica, sans-serif;
+	color:#FE76B6;
+	text-align: center;
+	font-size: 40px;
+}
+
+body {
+	background-color: #0D010D;
+	background-image: url("../Assets/backgroundart.jpg");
+	margin: 25px 0 0 0;
+}
+
+.wrapper {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: 3;
+	padding: 0px;
+	margin: 25px;
+}
+
+.menu {
+	grid-row: 1;
+	grid-column: span 12;
+	background-color:#323031;
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+}
+
+.linkBar {
+	padding: 5px;
+	grid-gap: 5px;
+	margin-top: auto;
+	margin-bottom: auto;
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+}
+
+#headerGallerySeparator {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+#aboutUsMessage {
+	padding-right: 100px;
+    padding-left: 100px;
+}
+	
+.content {
+	grid-row: 2;
+	grid-column: span 12;
+	background-color:#4C494A;
+	padding: 0 25px 0 25px;
+}
+
+.footer {
+	grid-row: 3;
+	grid-column: span 12;
+	background-color:#5C595A;
+	border-bottom-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+}
+
+.linkBarButton {
+	background-color:#0D010D;
+	opacity: 0.5;
+	transition:  opacity, background-color 0.5s;
+	color: #FDF508;
+	font-family: "Mansalva", Helvetica, sans-serif;
+	text-align: center;
+	font-size: 20px;
+	text-decoration: none;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.linkBarButton:hover, .leftLinkBarButton:hover, #rightLinkBarButton:hover {
+	opacity: 1;
+	background-color: #812b53;
+}
+
+.leftLinkBarButton {
+	border-top-left-radius: 25px;
+	background-color:#0D010D;
+	color: #FDF508;
+	font-family: "Mansalva", Helvetica, sans-serif;
+	text-align: center;
+	font-size: 20px;
+	text-decoration: none;
+	opacity: 0.5;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	transition:  opacity, background-color 0.5s;
+}
+
+#rightLinkBarButton {
+	border-top-right-radius: 25px;
+	background-color:#0D010D;
+	opacity: 0.5;
+}
+
+#currentPage {
+	background-color: #FE76B6;
+	opacity: 1;
+	color: #FDF508;
+	font-family: "Mansalva", Helvetica, sans-serif;
+	text-align: center;
+	font-size: 20px;
+	text-decoration: none;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.roundedContainer {
+	border-radius: 25px;
+	margin-bottom: 25px;
+	background-color: #0D010D;
+}
+
+#lastRoundedContainer {
+	border-radius: 25px;
+	margin-bottom: auto;
+	background-color: #0D010D;
+}
+
+#tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+#tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #FDF508;
+  text-align: center;
+  border-radius: 10px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 101%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.5s;
+  font-family: "Avenir Next", sans-serif;
+}
+
+#tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+#tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.leftCard {
+	grid-column: span 1;
+	transition: 0.3s;
+	width: auto;
+	margin-left: 25px;
+	background-color:#323031;
+	border-radius: 25px;
+}
+
+.rightCard {
+	grid-column: span 1;
+	transition: 0.3s;
+	width: auto;
+	margin-right: 25px;
+	background-color:#323031;
+	border-radius: 25px;
+}
+
+img {
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+}
+
+.leftCard:hover, .rightCard:hover{
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+.descriptionContainer {
+	grid-column: span 4;
+	background-color:#323031;
+	padding: 0 2% 0 2%;
+	border-radius: 25px;
+	margin-right: 25px;
+}
+
+#leftDescriptionContainer {
+	margin-left: 25px;
+	margin-right: 0px;
+}
+
+.sideBySideContent {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-gap: 2%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+
+.queenName {
+	text-align: left;
+	margin: 20px 0px 0px 0px;
+	color: #FDF508;
+	font-size: 40px;
+	font-family: "Avenir Next", Helvetica, sans-serif;
+	font-weight: 700;
+}
+
+.queenRole {
+	text-align: left;
+	margin: 0px;
+	color:#FE76B6;
+	font-size: 30px;
+	font-family: "Avenir Next", Helvetica, sans-serif;
+	font-weight: 300;
+}
+
+.queenBlurb {
+	text-align: left;
+	margin-right: 10%	
+}
+
+.queenTitle {
+	text-align: center;
+	font-family: "Mansalva", Helvetica, sans-serif;
+	color: #FDF508;
+	font-size: 25px;
+	margin-top: 10px;
+	margin-bottom: 0px;
+	
+}
+
+.cardDescription {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 20px;
+}
+
+.instagramHandle {
+	color: #eeffef;
+	font-family: "Avenir Next", Helvetica, sans-serif;
+	text-align: center;
+	width: 100%;
+	font-size: 15px;
+	opacity: 0.75;
+	margin-bottom: 10px;
+}
+
+.queenNameRight {
+	text-align: right;
+	color: #FDF508;
+	margin: 20px 0px 0px 0px;
+	font-size: 40px;
+	font-family: "Avenir Next", Helvetica, sans-serif;
+	font-weight: 700;
+}
+
+.queenRoleRight {
+	text-align: right;
+	color:#FE76B6;
+	margin: 0;
+	font-size: 30px;
+	font-family: "Avenir Next", Helvetica, sans-serif;
+	font-weight: 300;
+}
+
+.queenBlurbRight {
+	text-align: right;
+	margin-left: 10%
+}
+
+/* BEGINNING OF FLOATING RIGHT HAND MENU FOR SOCIALS :) */
+
+#socialMenu {
+	position: fixed;
+	right: 0;
+	top: 40%;
+	width: 8em;
+	margin-top: -2.5em;
+}
+
+#mySidenav div {
+	grid-template-columns: repeat(5, 1fr);
+	display: grid;
+	position: absolute;
+	right: -110px;
+	transition: 0.5s;
+	padding: 10px 0px 10px 10px;
+	width: 150px;
+	text-decoration: none;
+	font-size: 20px;
+	color: white;
+	border-radius: 10px 0 0 10px;
+	box-shadow: 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+#mySidenav div:hover {
+  right: 0; /* move items to the left, showing them on rollover*/
+  cursor: pointer; /* clicky clicky */
+}
+
+.instagramSocial {
+	background-image: linear-gradient(45deg, #515BD4, #8134AF, #DD2A7B, #FEDA77, #F58529);
+	-webkit-background-clip: text;
+	color: transparent;
+	grid-column: span 4;
+	margin: 3px 0px 0px 0px;
+}
+
+.otherSocial {
+	text-align: left;
+	grid-column: span 4;
+	height: 32px;
+	margin: 3px 0px 0px 8px;
+	vertical-align: middle;
+}	
+
+#instagramSocials {
+	top: 20px;
+	background-color: #EEEEEE;
+	height: 32px;
+}
+
+#twitterSocial {
+  top: 82px;
+  background-color: #6699FF; /* Twitter Blue */
+  height: 32px;
+  font-family: "Avenir Next", sans-serif
+}
+
+#facebookSocial {
+  top: 144px;
+  background-color: #3B5998; /* Facebook Blue */
+  height: 32px;
+  font-family: "Avenir Next", sans-serif
+}
+
+#paypalSocial {
+  top: 206px;
+  background-color: #3B7BBF; /* Paypal Blue */
+  height: 32px;
+  font-family: "Avenir Next", sans-serif
+}
+
+.socialImage {
+	border-radius: 0px;
+}
+
+/* END OF SOCIAL MENU */
+
+#logoContainer {
+	padding: 20px 20px 40px 20px
+}
+
+#logoContainer > img {
+	max-width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+.socialGrid {
+	display: grid;
+	margin-bottom: 25px;
+}
+
+.twitter-follow-button {
+	margin: 0px auto 25px auto;
+}
+
+.twitter-timeline {
+	margin-left: auto;
+	margin-right: auto;	
+	display: block;
+}
+
+.coolPic {
+	margin: 0px auto 25px auto;
+}
+
+@media screen and (max-width: 750px) {
+	
+	.linkBar {
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 2;
+	}
+	
+	#currentPage {
+		transition: 0s;
+		border-top-right-radius: 25px;
+	}
+	
+	#rightLinkBarButton {
+		border-top-right-radius: 0px;
+	}
+    
+    .menu {
+        grid-column: span 12;
+    }
+    
+    .content {
+        grid-column: span 12;
+    }
+	
+	.wrapper {
+		grid-template-rows: 100px 1fr 1fr;
+	}
+	
+}
