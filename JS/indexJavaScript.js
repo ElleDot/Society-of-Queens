@@ -29,7 +29,7 @@ function openPaypal() {
 }
 
 // Set countdown date
-var countDownDate = new Date("Dec 14, 2019 18:00:00").getTime();
+var countDownDate = new Date("Apr 14, 2020 18:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -48,15 +48,15 @@ var x = setInterval(function() {
   // Output to p tag with neat little checks to have correct use of plurals
   
 	if (hours == 1) {
-		document.getElementById("countdownLabel").innerHTML = "December 14th, 18:00 - " + days + " days,  " + hours + " hour and " + minutes + " minutes to go!";
+		document.getElementById("countdownLabel").innerHTML = "April 14th, 18:00 - " + days + " days,  " + hours + " hour and " + minutes + " minutes to go!";
 	}
 	else if (days == 1) {
-		document.getElementById("countdownLabel").innerHTML = "December 14th, 18:00 - " + days + " day,  " + hours + " hours and " + minutes + " minutes to go!";
+		document.getElementById("countdownLabel").innerHTML = "April 14th, 18:00 - " + days + " day,  " + hours + " hours and " + minutes + " minutes to go!";
 	}
 	else if (hours == 1 && hours == 1) {
-		document.getElementById("countdownLabel").innerHTML = "December 14th, 18:00 - " + days + " day,  " + hours + " hour and " + minutes + " minutes to go!";
+		document.getElementById("countdownLabel").innerHTML = "April 14th, 18:00 - " + days + " day,  " + hours + " hour and " + minutes + " minutes to go!";
 	} else {
-		document.getElementById("countdownLabel").innerHTML = "December 14th, 18:00 - " + days + " days,  " + hours + " hours and " + minutes + " minutes to go!";
+		document.getElementById("countdownLabel").innerHTML = "April 14th, 18:00 - " + days + " days,  " + hours + " hours and " + minutes + " minutes to go!";
 	}
   
       

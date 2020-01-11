@@ -169,6 +169,7 @@ div.gallery {
 .sideBySideContent {
 	grid-template-columns: repeat(5, 1fr);
 	display: grid;
+	margin: 25px auto;
 }
 
 .gallery {
@@ -205,8 +206,8 @@ div.gallery {
 .modal-content {
   margin: auto;
   display: block;
-  width: 80%;
-  max-width: 700px;
+  width: 50%;
+  max-width: 500px;
 }
 
 /* Caption of Modal Image */
