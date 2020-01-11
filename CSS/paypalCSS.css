@@ -294,10 +294,6 @@ input {
 
 @media (pointer:none), (pointer:coarse) {
 	
-	.sideBySideContent {
-	grid-template-columns: repeat(2,1fr);
-	}
-	
 	.linkBar {
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: 2;

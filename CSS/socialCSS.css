@@ -457,10 +457,6 @@ img {
 
 @media (pointer:none), (pointer:coarse) {
 	
-	.sideBySideContent {
-	grid-template-columns: repeat(2,1fr);
-	}
-	
 	.linkBar {
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: 2;
@@ -474,12 +470,11 @@ img {
 		border-top-right-radius: 0px;
 	}
 	
-	.sideBySideContent {
-		grid-template-columns: repeat(2,1fr);
+	#rightLinkBarButton {
+		border-top-right-radius: 0px;
 	}
 	
-	#endOfLineOne {
-		transition: 0s;
+	#currentPage {
 		border-top-right-radius: 25px;
 	}
 	
