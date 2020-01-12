@@ -402,6 +402,11 @@ hr {
 	margin-bottom: 25px;
 	background-color: #0D010D;
 	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+	cursor: pointer;
+}
+
+.roundedContainer: hover {
+	cursor: pointer;
 }
 
 .container {

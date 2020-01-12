@@ -31,7 +31,22 @@ h2 {
 	font-family: "Mansalva", Helvetica, sans-serif;
 	color:#FE76B6;
 	text-align: center;
-	font-size: 50px
+	font-size: 50px;
+	margin-bottom: 0px;
+}
+
+h3 {
+	font-family: "Mansalva", Helvetica, sans-serif;
+	color:#FFFFFF;
+	text-align: center;
+	font-size: 35px;
+	margin: 0px auto 25px auto;
+}
+
+hr {
+	border-top: 5px solid white;
+	border-top-left-radius: 2px;
+	border-bottom-left-radius: 2px;
 }
 
 body {
@@ -141,7 +156,7 @@ body {
 
 .roundedContainer {
 	border-radius: 25px;
-	margin-bottom: 25px;
+	margin: auto 10% 25px 10%;
 	background-color: #0D010D;
 }
 
@@ -404,6 +419,90 @@ img {
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
+}
+
+.roundedContainer {
+	border-radius: 25px;
+	margin-bottom: 25px;
+	background-color: #0D010D;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+.descriptionContainer {
+	margin: 25px 25px 25px 0px;
+	grid-column: span 3;
+	background-color:#323031;
+	padding: 0px 25px 0px 25px;
+	border-radius: 25px;
+}
+
+.sideBySideEventContent {
+	grid-template-columns: repeat(4, 1fr);
+	display: grid;
+}
+
+.calendarView {
+	display: grid;
+	grid-template-rows: repeat(3, 1fr); 
+	margin: auto;
+	background-color:#fff;
+	border-radius: 25px;
+	height: 50%;
+	width: 66%;
+}
+
+#calendarTop{
+	grid-row: 1;
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+	background-color: #f36b6b;
+}
+
+#calendarMonth {
+	margin-top: 20px;;
+	margin-bottom: 10px;
+	font-size: 40px;
+}
+
+#calendarDay {
+	font-size: 5vw;
+    margin-top: 5px;
+    margin-bottom: 25%;
+    color: #000;
+	
+}
+
+#eventName {
+	text-align: left;
+	font-size: 2.5vw;
+	margin-bottom: 0;
+	font-weight: 900;
+	color: #FE76B6;
+    font-family: "Mansalva", cursive;
+}
+
+#eventLocation {
+	text-align: left;
+	font-size: 2vw;
+	margin-top: 10px;
+	color: #FDF508;
+	font-family: "Mansalva", cursive
+}
+
+#countdownLabel {
+	text-align: left;
+	font-size: 1.7vw;
+	font-weight: 700;
+}
+
+#eventDescription {
+	text-align: left;
+	font-size: 1.7vw;
+	margin-top: 0;
 }
 
 /* IF THE SCREEN WIDTH IS SMALL, ADJUST THE WRAPPER TO ACCOMMODATE THE SCREEN BETTER */

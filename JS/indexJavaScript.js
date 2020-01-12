@@ -28,6 +28,10 @@ function openPaypal() {
             }
 }
 
+function openEvents() {
+	window.open("HTML/events.html", "_self");
+}
+
 // Set countdown date
 var countDownDate = new Date("Apr 14, 2020 18:00:00").getTime();
 
