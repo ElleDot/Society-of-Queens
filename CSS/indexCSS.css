@@ -1,4 +1,36 @@
+/* Import all fonts needed from Google Fonts. */
 @import url('https://fonts.googleapis.com/css?family=Mansalva&display=swap');
+
+/* Declare all style options for whole tags first, before IDs and Classes. */
+
+a {
+	font-size: 25px;
+}
+
+p {
+	color: #eeffef;
+	font-family: "Avenir Next", Helvetica, sans-serif;
+	text-align: center;
+	font-size: 20px;
+}
+
+h1 {
+	font-family: "Mansalva", Helvetica, sans-serif;
+	color:#FE76B6;
+	text-align: center;
+}
+
+body {
+	background-color: #0D010D;
+	background-image: url("../Assets/backgroundart.jpg");
+	margin: 25px 0 0 0;
+}
+
+hr {
+	border-top: 5px solid white;
+	border-top-left-radius: 2px;
+	border-bottom-left-radius: 2px;
+}
 
 #titleContainer {
 	background-color:#4C494A;
@@ -20,28 +52,9 @@
 	border-radius: 0;
 }
 
-p {
-	color: #eeffef;
-	font-family: "Avenir Next", Helvetica, sans-serif;
-	text-align: center;
-	font-size: 20px;
-}
-
 #fromMessage {
 	text-align: right;
 	font-family: 'Mansalva', cursive;
-}
-
-h1 {
-	font-family: "Mansalva", Helvetica, sans-serif;
-	color:#FE76B6;
-	text-align: center;
-}
-
-body {
-	background-color: #0D010D;
-	background-image: url("../Assets/backgroundart.jpg");
-	margin: 25px 0 0 0;
 }
 
 .wrapper {
@@ -108,7 +121,6 @@ body {
 	color: #FDF508;
 	font-family: "Mansalva", Helvetica, sans-serif;
 	text-align: center;
-	font-size: 20px;
 	text-decoration: none;
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -138,7 +150,6 @@ body {
 	color: #FDF508;
 	font-family: "Mansalva", Helvetica, sans-serif;
 	text-align: center;
-	font-size: 20px;
 	text-decoration: none;
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -280,12 +291,6 @@ body {
 	margin-bottom: auto;
 }
 
-hr {
-	border-top: 5px solid white;
-	border-top-left-radius: 2px;
-	border-bottom-left-radius: 2px;
-}
-
 .slideshowContent {
 	grid-column: span 2;
 	background-color: #0D010D;
@@ -405,10 +410,6 @@ hr {
 	cursor: pointer;
 }
 
-.roundedContainer: hover {
-	cursor: pointer;
-}
-
 .container {
   padding: 2px 16px;
 }
@@ -516,7 +517,7 @@ hr {
 
 /* IF THE SCREEN WIDTH IS SMALL, ADJUST THE WRAPPER TO ACCOMMODATE THE SCREEN BETTER */
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 960px) {
 	
 	#titleContainer {
 		padding: 15px;
