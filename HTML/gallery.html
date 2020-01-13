@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<!-- Declaration of page title, CSS file, any imported JavaScript and also the metadata of the page. -->
     	<title>Society of Queens: Gallery</title>
 		<link rel="stylesheet" href="../CSS/galleryCSS.css">
 		<script src="../JS/galleryJavaScript.js"></script>
@@ -11,6 +12,7 @@
 	</head>
     <body>
 	    
+	    <!-- This is the floating menu on the right hand side of the screen, with 4 options -->
 	    <div id="socialMenu">
 			<div id="mySidenav" class="sidenav">
 				<div id="instagramSocials" onclick="openInstagram()">
@@ -32,11 +34,15 @@
 			</div>
 		</div>
 	    
+	    <!-- This is the page logo and its container. -->
 	    <div id="titleContainer">
 			<img class="pageLogo" src="../Assets/Logos/combologo.png">
 		</div>
 	    
+	    <!-- The start of 'wrapper', the main grid styling container of the page -->
 	    <div class="wrapper">
+		    
+		    <!-- The start of the navbar -->
 			<div class="menu"> <!--START OF MENU -->
 	        	<div class="linkBar" style="text-align:center">
 	        		<a class ="leftLinkBarButton" href="../index.html">Home</a>
@@ -46,7 +52,9 @@
 	            	<a class="linkBarButton" id="currentPage" href="#">Gallery</a>
 	            	<a class="linkBarButton" id="rightLinkBarButton" href="aboutUs.html">About Us</a>
 	        	</div>
-			</div> <!--END OF MENU -->
+			</div> <!--END OF NAVBAR -->
+			
+			<!-- The start of the 'content' div. Almost all of the content on the page is in this div! -->
 	        <div class="content">
 		        <h2>SoQ Highlights</h2>
 		        <p>Here at the Society of Queens, we have hosted, attended and been at the core of many different events. Take a look at our gallery below to see where we've been!</p>
@@ -60,7 +68,9 @@
 		        
 		        <hr id="headerGallerySeparator">
 		        
+		        <!-- Beginning of the Gallery container -->
 			    <div class="sideBySideContent">
+				    <!-- Individual gallery icons here -->
 				    <div class="gallery" onclick="on1()">
 						<img class="galleryImage" id="imageOne" src="../Assets/Gallery/tree1.jpg" alt="Sample text for picture one.">
 						<hr class="galleryImageSeparator">
@@ -113,10 +123,12 @@
 					</div>
 			    </div>
 		    </div>
+		    
 		    <div class="footer">
-	        	<p>Here's a paragraph,<br><br>but this time with a few 'br' tags!</p>
-      		</div>
-	    </div>
+	        	<p>Here's a p tag.<br><br>Filler text here, maybe contact details?</p>
+			</div>
+      		
+	    </div> <!-- Wrapper closing -->
 	    
 	    <!-- Another div below the footer for logos and affiliates -->
 		<div id="logoContainer">
