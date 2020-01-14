@@ -47,6 +47,8 @@ img {
 	border-top-right-radius: 25px;
 }
 
+/* Now for the IDs and Classes, to stop things from being overwritten by broad styling rules */
+
 #titleContainer {
 	background-color:#4C494A;
 	margin-left: auto;

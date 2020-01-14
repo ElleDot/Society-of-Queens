@@ -91,6 +91,8 @@ body {
 #queenEmail {
 	color: #FDF508;
 }
+
+/* Now for the IDs and Classes, to stop things from being overwritten by broad styling rules */
 	
 .content {
 	grid-row: 2;
