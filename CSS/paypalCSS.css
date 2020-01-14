@@ -285,7 +285,6 @@ input {
 	
 	.linkBar {
 		grid-template-columns: repeat(3, 1fr);
-		grid-template-rows: 2;
 	}
     
     .menu {
@@ -309,7 +308,6 @@ input {
 	
 	.linkBar {
 	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: 2;
 	}
 	
 	#rightLinkBarButton {

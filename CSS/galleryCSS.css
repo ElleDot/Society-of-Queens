@@ -378,7 +378,6 @@ div.gallery {
 	
 	.linkBar {
 	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: 2;
 	}
 	
 	#endOfLineOne {
@@ -422,7 +421,6 @@ div.gallery {
 	
 	.linkBar {
 	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: 2;
 	}
 	
 	#rightLinkBarButton {
