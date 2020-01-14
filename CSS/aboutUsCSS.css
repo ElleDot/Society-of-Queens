@@ -87,6 +87,10 @@ body {
 	padding-right: 100px;
     padding-left: 100px;
 }
+
+#queenEmail {
+	color: #FDF508;
+}
 	
 .content {
 	grid-row: 2;
