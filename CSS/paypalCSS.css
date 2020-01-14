@@ -40,6 +40,7 @@ b {
 input {
     margin: auto;
     display: block;
+    border: 0px;
 }
 
 /* Now for the IDs and Classes, to stop things from being overwritten by broad styling rules */
@@ -321,6 +322,10 @@ input {
 	
 	.sideBySideContent {
 		grid-template-columns: repeat(2,1fr);
+	}
+	
+	#messageDiv > p {
+		text-align: center;
 	}
 	
 	#endOfLineOne {

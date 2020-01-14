@@ -461,20 +461,20 @@ img {
 	width: 66%;
 }
 
-#calendarTop{
+.calendarTop{
 	grid-row: 1;
 	border-top-left-radius: 25px;
 	border-top-right-radius: 25px;
 	background-color: #f36b6b;
 }
 
-#calendarMonth {
+.calendarMonth {
 	margin-top: 20px;;
 	margin-bottom: 10px;
 	font-size: 40px;
 }
 
-#calendarDay {
+.calendarDay {
 	font-size: 5vw;
     margin-top: 5px;
     margin-bottom: 25%;
@@ -482,7 +482,7 @@ img {
 	
 }
 
-#eventName {
+.eventName {
 	text-align: left;
 	font-size: 2.5vw;
 	margin-bottom: 0;
@@ -491,7 +491,7 @@ img {
     font-family: "Mansalva", cursive;
 }
 
-#eventLocation {
+.eventLocation {
 	text-align: left;
 	font-size: 2vw;
 	margin-top: 10px;
@@ -505,7 +505,7 @@ img {
 	font-weight: 700;
 }
 
-#eventDescription {
+.eventDescription {
 	text-align: left;
 	font-size: 1.7vw;
 	margin-top: 0;
